@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer_tab{
+    width: 70%;
+    margin: auto;
+    font-family: sans-serif;
+    /* margin-bottom: 10px; */
+}
+.footer_tab>thead>tr>td{
+    font-weight: bold;
+    color: #333C43;
+    font-size: 16px;
+}
+.footer_tab td{
+    padding: 5px 20px;
+    font-family: sans-serif;
+}
+.footer_tab a{
+    text-decoration: none;
+    color: #475056;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.footer_tab a:hover{
+    border-bottom: 2px solid black;
+}
+#footer_social{
+    width: 70%;
+    background-color: #EBECEC;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15%;
+    margin-top: 50px;
+}
+.footer_forsocial{
+    width: 40%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.footer_first{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.footer_first>a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #475056;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer_first>img{
+    width: 35px;
+    height: 35px;
+}
+.footer_second{
+    margin-top: 30px;
+    width: 100%;
+}
+.footer_second>a>i{
+   font-size: 30px;
+   padding:0px 8px;
+  color: #475056;
+}
+.footer_forsearch{
+    width: 60%;
+    height: 100%;
+}
+.footer_app{
+    width: 100%;
+    text-align: end;
+    margin-top: 20px;
+}
+.footer_app>a>img{
+    width: 150px;
+}
+.footer_search{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer_search>p{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #475056;
+    font-family: sans-serif;
+}
+.footer_search>input{
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid rgb(121, 118, 118);
+    margin-right: 10px;
+}
+.footer_search>button{
+    padding: 11px 16px;
+    background-color: #4EA819;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: sans-serif;
+    border: 1px solid #4EA819;
+}
+
+#footer_third{
+    background-color: #D6D8D9;
+    padding: 10px 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: #475056;
+    align-items: center;
+}
+#footer_third>div>a{
+    text-decoration: none;
+    color: #475056;
+}
+
+@media(max-width:1100px) and (min-width:800px){
+    .footer_tab td a{
+        font-size: 13px;
+        }
+        .footer_tab td{
+            padding: 0px 10px;
+        }
+}

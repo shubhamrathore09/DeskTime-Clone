@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar-ul{
+    width: 100%;
+    padding: 2px 0px;
+    background-color: #4EB419;
+    position: fixed;
+    top: 0px;
+}
+#navbar{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0px;
+   
+}
+.first{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    align-items: center;
+ 
+}
+.first *{
+    color: #475056;
+}
+.first img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.second{
+    float: right;
+}
+.second ul li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+.second ul li a{
+    font-family: sans-serif;
+    color: #475056;
+    font-weight: 600;
+    font-size: 16px;
+}
+.second ul li:hover{
+    border-bottom: 2px solid #4EB419;
+}
+.second ul li button{
+    padding: 10px 12px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+#navbar_last_but{
+    background-color: #4EB419;
+    border: 1px solid #ccc;
+
+}
+#navbar_last_but>a{
+    color: #ffffff;
+}
+.checkbtn{
+    font-size: 30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:1150px) and (min-width:100px){
+  
+    ul{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+    margin-top: 100px;
+    position:fixed;
+    width: 100%;
+    background-color: #ffffff;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    }
+    .second ul li:hover{
+        border: none;
+    }
+    li{
+        margin-top: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    li a{
+        color: #475056;
+        font-weight: 550;
+    }
+    .shownavbar{
+        top:0%;
+    }
+    .hidenavbar{
+        top:-100%;
+    }
+
+}
