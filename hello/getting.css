@@ -1,0 +1,98 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+#trial_container{
+    height: 250px;
+    background-color:#4EA819;
+    margin-top: 50px;
+}
+
+#trial_box{
+    display: flex;
+   align-items:center ;
+   justify-content: center;
+    height: 125px;
+    margin: auto;
+    color: white;
+    text-align:center;
+
+}
+
+
+
+#get_h1{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#page2>div{
+    border:2px solid rgb(173, 172, 172);
+    height:auto; 
+    width: 700px;  
+}
+
+
+#page2{
+   height: auto;
+    width:50%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap:40px;
+    margin-top: 50px;
+    
+}
+
+#page2>div>h4  {
+    margin-left: 20px;
+    
+ }
+ 
+ #page2>div>a  {
+     margin-left: 20px;
+     color: #4EA819;
+     text-decoration: none;
+    
+  }
+  
+#faq_btn{
+    border: 1px solid white;
+}
+
+#faq_btn:hover{
+    background-color:white;
+    color:black ;
+}
+
+#work_email{
+    padding:10px;
+    width:30%
+}
+
+#faq_btn{
+    background-color:#4EA819;
+    padding: 10px;
+    border-radius:5px;
+    border:1px solid black;
+    cursor:pointer;
+    color:white;
+}
+
+
+
+  
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: white;
+    }
+  } 
+
+  
