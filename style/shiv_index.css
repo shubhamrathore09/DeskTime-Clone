@@ -1,4 +1,5 @@
 #home_body{
+    padding-top: 90px;
     width: 100%;
     margin: auto;
    background-image:url(https://desktime.com/assets/img/intro_background.png);
@@ -37,7 +38,7 @@ background-color: green;
 color: aliceblue;
 height: 45px;
 width: 150px;
-border-collapse: collapse;
+border: none;
 
 } 
 .c1>button:hover {
@@ -308,4 +309,104 @@ background-color: gainsboro;
 }
 .c7-flex>div>p{
    color: grey;
+}
+.c8{
+    padding: 80px;
+    background-color:rgb(247, 242, 236)
+}
+.c_8_flex{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+.c9{
+   
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.c9_text{
+    
+    width: 80%;
+    margin: auto;
+}
+
+.c9_flex{
+    display: flex;
+    justify-content: space-around;
+
+}
+.c9_img_flex{
+    display: flex;
+    justify-content: flex-start;
+}
+.c9_img_flex>img{
+  height: 50px;
+  width: 50px;
+}
+.c9_icons>i{
+   
+    width: 80px;
+}
+.c9_img_flex>p{
+    color: grey;
+    font-size: 18px;
+}
+.c9_flex>div>div>button{
+    padding: 10px;
+}
+.c10{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.c2_pop{
+    height: 300px;
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    position: relative;
+ right: -900px;
+ top: -200px;
+ background-color: blueviolet;
+}
+
+.c2_pop_button{
+   position: relative;
+   left: 70px;
+   
+}
+#c2_l{
+    position: relative;
+    left: 60px;
+}
+#c2_r{
+    position: relative;
+    right: 60px;
+}
+.c2_pop>h3{
+    text-align: center;
+    margin-top: 150px;
+
+}#c2-container>img{
+margin: auto;
+align-items: center;
+height: 50px;
+
+position: relative;
+left: 70px;
+}
+#c2-container{
+    width: 100%;
+   
+    margin: auto;
+    
+}
+#c10_footer{
+    padding-top: 80px;
+    
 }
