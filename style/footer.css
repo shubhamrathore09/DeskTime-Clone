@@ -29,7 +29,7 @@ body{
     border-bottom: 2px solid black;
 }
 #footer_social{
-    width: 70%;
+    width: 100%;
     background-color: #EBECEC;
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,74 @@
+#mydesk_main{
+    margin-top: 200px;
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.mydesk_right{
+    display: flex;
+    align-items: center;
+
+}
+.mydesk_right div,.mydesk_right p,.mydesk_right label{
+    margin-right: 20px;
+}
+.mydesk_right>div:nth-last-child(2)>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+#check{
+    display: none;
+}
+.mydesk_right>div:nth-last-child(1)>button{
+    background-color: #4EA819;
+    border: none;
+    padding: 7px 10px;
+    margin-right: -4px;
+    border-right: 1px solid black;
+    color: white;
+}
+#mydesk_timing{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto;
+    gap: 40px;
+    margin-left: 50px;
+    color: #999DA1;
+    font-family: sans-serif;
+  
+}
+#mydesk_timing>div{
+    padding: 0px 10px;
+    /* height: 100px; */
+}
+#mydesk_timing>div>img{
+    width: 100%;
+}
+#mydesk_timing>div>h1{
+    margin-left: 10px;
+}
+#stop{
+    display: flex;
+    border: 1px solid #1b1b1b;
+    width: 150px;
+    justify-content: space-between;
+    background-color: #333c43;
+    color: #fff;
+    padding: 1rem 0.75rem;
+    z-index: 1040;
+    min-width: 175px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#stop button{
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+}
+#stop button i{
+    cursor: pointer;
+}

@@ -6,180 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/sidenav.css">
 </head>
 <body>
-    
-
-
-
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-    body {
-      font-family: "Lato", sans-serif;
-    }
-    
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color:#475056;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-    
-    /* .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-      padding: 8px;
-    } */
-    .sidenav a i {
-        padding: 10px;
-    }
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-    
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-    
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-      display: flex;
-      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-      align-items: center;
-      margin-left: 50px;
-    }
-
-    .sidebar_main{
-        border: 1px solid black;
-        margin-left: 20px;
-    }
-    .sidebar_main>input{
-        border: none;
-        outline: none;
-        padding: 10px 12px;
-    }
-    #sidebar_logo>a{
-        display: flex;
-        align-items: center;
-        font-size: 30px;
-        color: #ffffff;
-    }
-    #sidebar_logo>a>img{
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-    }
-    .sidebar_main_name{
-        display: flex;
-        margin-right: 0px;
-        position: absolute;
-        left: 85%;
-        width: 15%;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #save_latter{
-        padding: 10px;
-        background-color: aqua;
-        border-radius: 50%;
-    }
-    #sidebar_only{
-       display: flex;
-       flex-direction: column;
-       position:fixed;
-       height: 100%;
-       background-color: #475056;
-       width: 50px;
-       overflow-x: hidden;
-    }
-    #sidebar_only>img{
-        width: 30px ;
-        height: 30px;
-    }
-    #sidebar_only *{
-        padding: 10px;
-        font-size: 30px;
-    }
-    #sidebar_only i{
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-        color:#70777B;
-    }
-    #sidebar_only{
-        display: flex;
-    }
-    #sidebar_only p{
-        overflow-x: hidden;
-        font-size: 16px;
-        margin-left: 20px;
-    }
-    #sidebar_only:hover{
-        width: auto;
-    }
-
-  
-    /* @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    } */
     </style>
     </head>
     <body>
-    
-    <!-- <div id="mySidenav" class="sidenav">
-      
-      <div id="sidebar_logo"><a href=""><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">DeskTime</a></div>
-      <a href="#"><i class="fa-solid fa-desktop"></i>My DeskTime</a>
-      <a href="#"><i class="fa-solid fa-lock"></i>Project</a>
-      <a href="#"><i class="fa-solid fa-calendar"></i>Work Schdules</a>
-      <a href="#"><i class="fa-solid fa-calendar-check"></i>Booking</a>
-      <a href=""><i class="fa-solid fa-calendar-days"></i>Absence Calendar</a>
-      <a href=""><i class="fa-solid fa-file-lines"></i>Invoicing</a>
-      <a href=""> <i class="fa-solid fa-chart-pie"></i>Reports</a>
-      <a href=""><i class="fa-solid fa-file-export"></i>Exports</a>
-      <a href=""><i class="fa-solid fa-gear"></i>Setting</a>
-    </div> -->
+        <div id="sidenav_nav">
 
-    <div id="sidebar_only">
+        </div>
+    <!-- <div id="sidebar_only">
         <a href=""><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">DeskTime</a>
+
+
+       
+        <a href=""><i class="fa-solid fa-desktop"><p>My DeskTime</p></i></a>
+        <a href=""><i class="fa-solid fa-lock"><p>Project</p></i></a>
+        <a href=""><i class="fa-solid fa-calendar"><p>Work Schdules</p></i></a>
+        <a href=""> <i class="fa-solid fa-calendar-check"><p>Booking</p></i></a>
+        <a href=""><i class="fa-solid fa-calendar-days"><p>Absence Calender</p></i></a>
+        <a href=""><i class="fa-solid fa-file-lines"><p>Invoicing</p></i></a>
+        <a href=""><i class="fa-solid fa-chart-pie"><p>Reports</p></i></a>
+        <a href=""><i class="fa-solid fa-file-export"><p>Exports</p></i></a>
+        <a href=""><i class="fa-solid fa-gear"><p>Setting</p></i></a>
         
-        <i class="fa-solid fa-desktop"><p>My DeskTime</p></i>
-        <i class="fa-solid fa-lock"><p>Project</p></i>
-        <i class="fa-solid fa-calendar"><p>Work Schdules</p></i>
-        <i class="fa-solid fa-calendar-check"><p>Booking</p></i>
-        <i class="fa-solid fa-calendar-days"><p>Absence Calender</p></i>
-        <i class="fa-solid fa-file-lines"><p>Invoicing</p></i>
-        <i class="fa-solid fa-chart-pie"><p>Reports</p></i>
-        <i class="fa-solid fa-file-export"><p>Exports</p></i>
-        <i class="fa-solid fa-gear"><p>Setting</p></i>
     </div>
     
     <div id="main">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <div class="sidebar_main"><input type="text" name="" id="" placeholder="Search" ><i class="fa-solid fa-magnifying-glass"></i></div>
         <div class="sidebar_main_name" id="name_main"><i class="fa-solid fa-bell"></i><div><p id="save_name">shubham</p><p id="save_company_name">rathore</p></div> <h1 id="save_latter">S</h1></div>
-      
-    </div>
-    
+    </div> -->
+
+    <!-- <div id="second_nav">
+        <h3>Get started with DeskTime <input type="range"></h3>
+        <button><span>1</span>Start tracking time</button>
+        <button><span>2</span>Create a project</button>
+        <button><span>3</span>Desktop App</button>
+        <button><span><i class="fa-solid fa-check"></i></span>web timer</button>
+        <button><span>5</span>Edit the setting</button>
+        <button><span>6</span>subscribe to DeskTime</button>
+        <a href="">Help</a>
+    </div> -->
+
+
+
+    <script type="module">
+        import sidenav from './script/desknav.js'
+        document.getElementById("sidenav_nav").innerHTML=sidenav;
+    </script>
     <script>
         let count=0;
         let demo=0;
@@ -187,26 +63,18 @@
         if(count==0){
     
       document.getElementById("main").style.marginLeft = "300px";
-      document.getElementById("sidebar_only").style.width="300px"
-    
+      document.getElementById("sidebar_only").style.width="280px"
+      document.getElementById("second_nav").style.marginLeft="320px"
       count++;
         }
         else{
-            document.getElementById("sidebar_only").style.width = "50px";
+            document.getElementById("sidebar_only").style.width = "40px";
       document.getElementById("main").style.marginLeft = "50px";
+      document.getElementById("second_nav").style.marginLeft="100px"
       count=0;
         }
     }
 
     </script>
-       
- 
-
-
-
-
-
-
-
 </body>
 </html>

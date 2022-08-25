@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+    <title>mydesk</title>
+    <link rel="stylesheet" href="./style/mydesk.css">
+</head>
+<body>
+    <div id="mydesk_main">
+        <h2>My DeskTime</h2>
+        <div class="mydesk_right">
+            <p id="mydesk_data">25-08-2022</p>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <a href="https://calendly.com/sales-desktime/desktime-demo?month=2022-08"><i class="fa-solid fa-calendar-days"></i></a>
+            </label>
+             <div><button><</button>
+                <button>></button></div>
+
+                <div>
+                    <button>Day</button>
+                    <button>Week</button>
+                    <button>Month</button>
+                </div>
+        </div>
+    </div>
+    <div id=mydesk_timing>
+        <div>
+            <p>ARRIVAL TIME</p>
+            <h1 id="mydesk_f">-</h1>
+            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+        </div>
+        <div>
+            <p>Left time</p>
+            <h1 id="mydesk_s">-</h1>
+            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+        </div>
+
+        <div>
+            <p>PRODUCTIVITY TIME</p>
+            <h1 id="mydesk_t">0<span>s</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-productive-time.svg" alt="">
+        </div>
+
+        <div>
+            <P>DESKTIME TIME</P>
+            <h1 id="mydesk_four">0<span>s</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-desktime-time.svg" alt="">
+        </div>
+        <div>
+            <P>UNPRODUCTIVE TIME</P>
+            <h1 id="mydesk_five">0<span>s</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-offline-time.svg" alt="">
+        </div>
+        <div>
+            <P>TIME AT WORK</P>
+            <h1 id="mydesk_six">0<span>s</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-productive-time.svg" alt="">
+        </div>
+        <div>
+            <P>EFFECTIVENESS</P>
+            <h1 id="mydesk_seven">0<span>%</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+        </div>
+        <div>
+            <P>PRODUCTIVITY</P>
+            <h1 id="mydesk_e">0<span>%</span></h1>
+            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+        </div>
+    </div>
+
+
+    <div id="stop">
+        <div>
+        <button onclick="start()"><i class="fa-solid fa-play"></i></button>
+        <button onclick="stop()"><i class="fa-solid fa-stop"></i></button>
+        <button onclick="Delete()"><i class="fa-solid fa-trash-can-arrow-up"></i></button>
+        </div>
+        <div id="display"></div>
+    </div>
+</body>
+</html>
+<script src="./script/mydesk.js">
+    
+
+
+
+
+</script>
