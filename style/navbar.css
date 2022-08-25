@@ -1,10 +1,8 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style:none ;
     text-decoration: none;
-    box-sizing: border-box;
-    font-family: sans-serif;
 }
 .navbar-ul{
     width: 100%;
@@ -14,15 +12,17 @@
     top: 0px;
 }
 #navbar{
-    width: 100%;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 20px 10%;
+    padding: 0px 10%;
     position: fixed;
     top: 0px;
+    z-index: 1;
+    background-color: white;
    
 }
 .first{
