@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <style>
+        .fa {
+            padding: 20px 19px;
+            font-size: 15px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        #container{
+            
+            width:20%;
+            height:auto;
+            margin:auto;
+            margin-top:200px;
+            font-family: "Source Sans Pro";
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+            padding-top: 30px;
+            
+        }
+        #container #login{
+            
+            width:100%;
+            height:500px;
+            text-align: center;
+
+        }
+        #signin input{
+            width:80%;
+            height:45px;
+            margin:15px 0px 15px 0px; 
+            text-align: left;
+            padding-left: 10px;
+        }
+        #signin label{
+            padding-right:350px;
+            padding-top: 25px;
+            
+        }
+        #signin label:nth-child(1){
+            padding-right:370px;
+        }
+        #login #heading{
+            width:100%;
+            height:auto;
+            margin:auto;
+            
+            font-size: x-large;
+        }
+        #signin #done{
+            height:55px;
+            width:84%;
+        }
+        #secondcontainer{
+            width:100%;
+            height:auto;
+            margin:auto;
+            padding-bottom: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #logo{
+            display:flex;
+            margin:auto;
+            
+            grid-template-columns: repeat(5,1fr);
+            gap: 5px;
+            justify-content: center;
+        }
+        .alias {
+            cursor:alias;
+        }
+
+        
+       
+   
+        
+            
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="login">
+            <div id="heading">
+                <h1><b>Log in to DeskTime</b></h1>
+            </div>
+            <form id="signin">
+                <label for="login">Email</label><br>
+                <input id="email" type="text" placeholder="Type in your email address"/><br>
+                <label for="psw">Password</label><br>
+                <input id="password" type="number" placeholder="Type in your password"/><br>
+                <input type="submit" id="done" value="LOGIN" style="background-color:#4EA819; color:white; text-align: center"/>
+                <h2 style="text-decoration:underline;font-weight:bold;">I forgot my password</h2>
+                <h3>Don't have an account yet?<a href="signup.html"><b class="alias"style="text-decoration:underline;">Sign up here!</b></a></h3>
+            </form>
+
+        </div>
+    
+        <div id="secondcontainer">
+            <h2><b>Or connect with</b></h2>
+        
+            <div id="logo">
+                <div><a href="#" class="fa fa-facebook"></a></div>
+                <div><a href="#" class="fa fa-twitter"></a></div>
+                <div><a href="#" class="fa fa-google"></a></div>
+                <div><a href="#" class="fa fa-linkedin"></a></div>
+                <div><a href="#" class="fa fa-snapchat-ghost"></a></div>
+            </div>
+            
+        </div>
+    
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#signin").addEventListener("submit",signinfunc);
+    let Arr=JSON.parse(localStorage.getItem("storeDetails")) || [];
+    let Arr2=JSON.parse(localStorage.getItem("storedDetails")) || JSON.parse(localStorage.getItem("storedDetails1")) || [];
+    function signinfunc(){
+        event.preventDefault();
+        obj1={
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#password").value,
+        }
+        if(obj1.email=="" || obj1.password==""){
+            alert("Invalid input")
+            return;
+        }
+        Arr2.push(obj1);
+        let c=0;
+        for(let i=0;i<Arr.length-1;i++){
+            if(Arr[i]!=obj1){
+                c++;
+            } else {
+                c=0;
+            }
+        }
+        if(c>1){
+            alert("Create account")
+        } else {
+            alert("successfully logged In")
+            window.location.href="Navbar.html"
+        }
+        localStorage.setItem("storeDetails",JSON.stringify(Arr2));
+    }
+</script>
+
