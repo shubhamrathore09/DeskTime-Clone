@@ -1,9 +1,9 @@
 
-     
 
 
-function navbar(){
-    return `   <div class="navbar-ul">
+
+function navbar() {
+    return `<div class="navbar-ul">
 
     </div>
     <div id="navbar">
@@ -33,4 +33,3 @@ function navbar(){
 </div>`
 }
 export default navbar();
-     
