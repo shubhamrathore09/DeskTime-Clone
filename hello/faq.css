@@ -37,8 +37,8 @@ body{
 #faq_parent{
     /* border: 2px solid blue; */
     height: auto;
-    width:75%;
-    margin-left: 15%;
+    width:80%;
+    padding:0px 10% ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);

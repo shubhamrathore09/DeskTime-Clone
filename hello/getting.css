@@ -41,8 +41,8 @@ body{
 
 #page2{
    height: auto;
-    width:50%;
-    margin-left: 25%;
+    width:80%;
+    margin-left: 29%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
