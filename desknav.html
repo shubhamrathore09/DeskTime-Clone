@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/sidenav.css">
+</head>
+<body>
+
+    <style>
+    </style>
+
+
+    </head>
+    <body>
+        <div id="sidenav_nav">
+
+        </div>
+    <!-- <div id="sidebar_only">
+        <a href=""><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">DeskTime</a>
+
+
+       
+        <a href=""><i class="fa-solid fa-desktop"><p>My DeskTime</p></i></a>
+        <a href=""><i class="fa-solid fa-lock"><p>Project</p></i></a>
+        <a href=""><i class="fa-solid fa-calendar"><p>Work Schdules</p></i></a>
+        <a href=""> <i class="fa-solid fa-calendar-check"><p>Booking</p></i></a>
+        <a href=""><i class="fa-solid fa-calendar-days"><p>Absence Calender</p></i></a>
+        <a href=""><i class="fa-solid fa-file-lines"><p>Invoicing</p></i></a>
+        <a href=""><i class="fa-solid fa-chart-pie"><p>Reports</p></i></a>
+        <a href=""><i class="fa-solid fa-file-export"><p>Exports</p></i></a>
+        <a href=""><i class="fa-solid fa-gear"><p>Setting</p></i></a>
+        
+    </div>
+    
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="sidebar_main"><input type="text" name="" id="" placeholder="Search" ><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="sidebar_main_name" id="name_main"><i class="fa-solid fa-bell"></i><div><p id="save_name">shubham</p><p id="save_company_name">rathore</p></div> <h1 id="save_latter">S</h1></div>
+    </div> -->
+
+    <!-- <div id="second_nav">
+        <h3>Get started with DeskTime <input type="range"></h3>
+        <button><span>1</span>Start tracking time</button>
+        <button><span>2</span>Create a project</button>
+        <button><span>3</span>Desktop App</button>
+        <button><span><i class="fa-solid fa-check"></i></span>web timer</button>
+        <button><span>5</span>Edit the setting</button>
+        <button><span>6</span>subscribe to DeskTime</button>
+        <a href="">Help</a>
+    </div> -->
+
+
+
+    <script type="module">
+        import sidenav from './script/desknav.js'
+        document.getElementById("sidenav_nav").innerHTML=sidenav;
+    </script>
+    <script>
+        let count=0;
+        let demo=0;
+    function openNav() {
+        if(count==0){
+    
+      document.getElementById("main").style.marginLeft = "300px";
+      document.getElementById("sidebar_only").style.width="280px"
+      document.getElementById("second_nav").style.marginLeft="320px"
+      count++;
+        }
+        else{
+            document.getElementById("sidebar_only").style.width = "40px";
+      document.getElementById("main").style.marginLeft = "50px";
+      document.getElementById("second_nav").style.marginLeft="100px"
+      count=0;
+        }
+    }
+
+    </script>
+</body>
+</html>
