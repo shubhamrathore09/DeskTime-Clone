@@ -156,6 +156,7 @@
     </style>
 </head>
 <body>
+    <div id="nav"></div>
     <div id="container">
         <div id="login">
             <div id="heading">
@@ -190,6 +191,16 @@
         </div>
     
     </div>
+    <div id="footer"></div>
 </body>
 </html>
 <script src="signupscript.js"></script>
+<script type="module">
+    import footer from './script/footer.js';
+    document.getElementById("footer").innerHTML=footer
+
+</script>
+<script type="module">
+    import navbar from './script/navbar.js'
+    document.getElementById("nav").innerHTML=navbar
+</script>

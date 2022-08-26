@@ -1,12 +1,13 @@
 document.querySelector("#signup").addEventListener("submit",createfunc);
     let Arr=JSON.parse(localStorage.getItem("storeDetails")) || [];
-    function createfunc(){
+    function createfunc(event){
         event.preventDefault();
         obj={
+            name:document.querySelector("#name").value,
             email:document.querySelector("#email").value,
             password:document.querySelector("#password").value,
         }
-        if (obj.email=="" || obj.password==""){
+        if (obj.email=="" || obj.password=="" || obj.name==""){
             alert("Invalid input")
             return;
         } else {
