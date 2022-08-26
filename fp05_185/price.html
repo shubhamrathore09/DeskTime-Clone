@@ -122,11 +122,11 @@
         #check p{
             text-align: left;
         }
-        .price_box #cost,.price_box h3 {
+        .price_box .cost,.price_box h3 {
             margin-top: -20px;
 
         }
-        #cost{
+        .cost{
             font-size: 50px;
             color: #475056;
         }
@@ -188,7 +188,7 @@
         <div class="price_container">
             <div class="price_box">
                 <h1 style="color:#475056">Lite</h1><br>
-                <h1 id="cost" style="color:#4EA819;">Free</h1>
+                <h1 class="cost" style="color:#4EA819;">Free</h1>
                 <h3 style="color:#475056">1 User only</h3>
                 <p>                   </p>
                 <div id="check">
@@ -213,7 +213,7 @@
             </div>
             <div class="price_box">
                 <h1 style="color:#475056">Pro</h1><br>
-                <h1 id="cost">$7</h1>
+                <h1 id="cost1" class="cost">$7</h1>
                 <h3 style="color:#475056">user/month</h3>
                 <p class="needs">Everything in Pro,plus</p>
                 <div id="check">
@@ -245,7 +245,7 @@
             </div>
             <div class="price_box">
                 <h1 style="color:#475056">Premium</h1><br>
-                <h1 id="cost" style="color:#475056">$10</h1>
+                <h1 class="cost" style="color:#475056" id="cost2">$10</h1>
                 <h3 style="color:#475056">1 User only</h3>
                 <p class="needs">Everything in Pro,plus</p>
                 <div id="check">
@@ -281,7 +281,7 @@
             </div>
             <div class="price_box">
                 <h1 style="color:#475056">Enterprise</h1><br>
-                <h1 style="color:#475056" id="cost">$20</h1>
+                <h1 style="color:#475056" class="cost" id="cost3">$20</h1>
                 <h3 style="color:#475056">1 User only</h3>
                 <p class="needs">Everything in Premium,plus</p>
                 <div id="check">
@@ -335,12 +335,22 @@
     document.getElementById("nav").innerHTML=navbar
 </script>
 <script>
+
     var btn=document.getElementById('btn')
+    var cos1=document.getElementById('cost1')
+    var cos2=document.getElementById('cost2')
+    var cos3=document.getElementById('cost3')
     function leftClick(){
         btn.style.left='0'
+        cos1.innerHTML="$7"
+        cos2.innerHTML="$10"
+        cos3.innerHTML="$20"
     }
     function rightClick(){
         btn.style.left='106px'
+        cos1.innerHTML="$6.42"
+        cos2.innerHTML="$9.17"
+        cos3.innerHTML="$18.33"
     }
 
 </script>
