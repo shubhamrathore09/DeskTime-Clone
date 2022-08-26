@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <style>
+        *body{
+            font-family:"Source Sans Pro",sans-serif;
+        }
+        #main_heading{
+            font-family: "Source Sans Pro";
+    
+            height:auto;
+            width:50%;
+            margin:auto;
+            margin-top: 120px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        #main_heading p{
+            margin-top: -50px;
+            width:85%;
+            line-height: 25px;
+            margin-left: 45px;
+        }
+        .button-box{
+            width:200px;
+            margin:25px;
+            position:relative;
+            border-radius:30px;
+            background:#d1e0eb;
+            margin-left: 500px;
+            display:flex;
+            /* justify-content:space-between; */
+            gap:0px;
+
+        }
+        .toggle-btn{
+            padding:10px 27px;
+            cursor:pointer;
+            background:transparent;
+            border:0;
+            outline:none;
+            position:relative;
+            text-align: center;
+        }
+        #btn{
+            left:0;
+            top:0;
+            position:absolute;
+            width:95px;
+            height:100%;
+            background:#4EA819;
+            border-radius:30px;
+            transition: .5s;
+        }
+        .price_container{
+            height:auto;
+            width:90%;
+            padding:10px;
+            margin:50px auto;
+            border:1px solid red;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            background:#f8fdff;
+            justify-content:center;
+            border-radius: 9px;
+
+        
+            
+
+        }
+        .price_box{
+            border:1px solid blue;
+            width:97%;
+            height:93%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin:25px 10px;
+            transition:1s;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .price_box:hover{
+            transform:scale(1.15);
+            z-index:2;
+        }
+        
+        :root {
+            --borderWidth: 4px;
+            --height: 12px;
+            --width: 6px;
+            --borderColor: #78b13f;
+        }
+        .check {
+            display: inline-block;
+            transform: rotate(45deg);
+            height: var(--height);
+            width: var(--width);
+            border-bottom: var(--borderWidth) solid var(--borderColor);
+            border-right: var(--borderWidth) solid var(--borderColor);
+            margin-right: 0px;
+            color: #475056;
+        }
+        #check{
+            border:1px solid red;
+            display:grid;
+            grid-template-columns: 30px 200px;
+            grid-template-rows: 40px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #check p{
+            text-align: left;
+        }
+        .price_box #cost,.price_box h3 {
+            margin-top: -20px;
+
+        }
+        #cost{
+            font-size: 50px;
+            color: #475056;
+        }
+        #done1{
+            margin-top:184px;
+            height:35px;
+            width:88%;
+            border-radius: 7px;
+            margin-bottom: 30px;
+        }
+        #done2{
+            margin-top:92px;
+            height:35px;
+            width:88%;
+            border-radius: 7px;
+            margin-bottom: 30px;
+        }
+        #done3{
+            margin-top:50px;
+            height:35px;
+            width:88%;
+            border-radius: 7px;
+            margin-bottom: 30px;
+        }
+        #done4{
+            margin-top:50px;
+            height:35px;
+            width:88%;
+            border-radius: 7px;
+            margin-bottom: 30px;
+        }
+        .needs{
+            font-size: small;
+            margin-top: -20px;
+        }
+        
+
+        
+       
+        
+       
+
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+    <div id="price_container">
+        <div id="main_heading">
+            <h1 style="color:#475056"><b>Find the right pricing plan for your team</b></h1><br>
+            <p style="color:#475056">The best value for money all-in-one time management tool.if you like to get a personalized pricing quote contact us <b style="color:#4EA819;">here</b></p>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="leftClick()">Monthly</button>
+                <button type="button" class="toggle-btn" onclick="rightClick()">Annual</button>
+            </div>
+        </div>
+        <div class="price_container">
+            <div class="price_box">
+                <h1 style="color:#475056">Lite</h1><br>
+                <h1 id="cost" style="color:#4EA819;">Free</h1>
+                <h3 style="color:#475056">1 User only</h3>
+                <p>                   </p>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Mobile app</p></div>
+                </div>
+                
+                <input type="submit" id="done1" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+
+            </div>
+            <div class="price_box">
+                <h1 style="color:#475056">Pro</h1><br>
+                <h1 id="cost">$7</h1>
+                <h3 style="color:#475056">user/month</h3>
+                <p class="needs">Everything in Pro,plus</p>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Productivity calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Idle time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Project time tracking</p></div>
+                </div>
+                <input type="submit" id="done2" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            <div class="price_box">
+                <h1 style="color:#475056">Premium</h1><br>
+                <h1 id="cost" style="color:#475056">$10</h1>
+                <h3 style="color:#475056">1 User only</h3>
+                <p class="needs">Everything in Pro,plus</p>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Absence calender</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Shift Scheduling</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Invoicing</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Company integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Offline time approval</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>IP restrications</p></div>
+                </div>
+                <input type="submit" id="done3" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            <div class="price_box">
+                <h1 style="color:#475056">Enterprise</h1><br>
+                <h1 style="color:#475056" id="cost">$20</h1>
+                <h3 style="color:#475056">1 User only</h3>
+                <p class="needs">Everything in Premium,plus</p>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>VIP support</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Personalized onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited projects</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited tasks</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited data history</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom API functions</p></div>
+                </div>
+                <input type="submit" id="done4" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            
+        </div>
+        
+        
+
+    </div>
+    <div id="footer"></div>
+    
+</body>
+</html>
+<script type="module">
+    import footer from './script/footer.js';
+    document.getElementById("footer").innerHTML=footer
+
+</script>
+<script type="module">
+    import navbar from './script/navbar.js'
+    document.getElementById("nav").innerHTML=navbar
+</script>
+<script>
+    var btn=document.getElementById('btn')
+    function leftClick(){
+        btn.style.left='0'
+    }
+    function rightClick(){
+        btn.style.left='106px'
+    }
+
+</script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
