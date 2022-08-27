@@ -64,11 +64,13 @@ body {
 h1 {
     font: 42px "Source Sans Pro", sans-serif;
 }
-h3{
+
+h3 {
     line-height: 2.875rem;
     font-size: 2.25rem;
 }
-h4{
+
+h4 {
     line-height: 2rem;
     font-size: 1.625rem;
 }
@@ -129,7 +131,8 @@ img {
 .text-center {
     text-align: center;
 }
-.text-lg-left{
+
+.text-lg-left {
     text-align: left;
 }
 
@@ -137,6 +140,13 @@ img {
     font-weight: 700 !important;
 
 
+}
+.mb-0{
+    margin-bottom: 0;
+}
+
+.mb-1{
+    margin-bottom: 0.125rem;
 }
 
 .mb-2 {
@@ -146,14 +156,21 @@ img {
 .mb-3 {
     margin-top: 0.5rem;
 }
+
 .mb-4 {
     margin-bottom: 0.625rem;
 }
-.mb-6{
+
+.mb-6 {
     margin-bottom: 1rem;
 }
-.mb-7{
+
+.mb-7 {
     margin-bottom: 1.25rem;
+}
+
+.wd-70 {
+    width: 70%;
 }
 
 .btn {
@@ -171,6 +188,25 @@ img {
     min-height: 2.5rem;
     font: 14px "Source Sans Pro", sans-serif;
 }
+
+.btn-lg {
+    padding: 0.8125rem 2rem;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    min-height: 3rem;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #fff;
+    background-color: #4EA819;
+    color: #fff;
+}
+.btn-outline-secondary:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
 
 img {
     border-style: none;
@@ -206,12 +242,101 @@ p {
     margin-bottom: 0.625rem;
 }
 
-.rating{
+.rating {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.img-fluid{
+
+.img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+
+.lazyload {
+    width: 13%;
+    border-radius: 50%;
+}
+
+.main {
+    position: relative;
+}
+
+#left-btn {
+    left: 100px;
+}
+
+#right-btn {
+    right: 100px;
+}
+
+.nextprevBtn {
+    position: absolute;
+    top: 40%;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.d-inline-block {
+    display: inline-block;
+    width: 10%;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+
+.card-footer {
+    padding: 0.5rem 1rem 1rem;
+}
+
+.shadow {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-control {
+    border-radius: 0.125rem;
+    border-color: #999DA1;
+    color: #70777B;
+    padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+    min-height: 2.5rem;
+    height: 2.5rem;
+    line-height: 1rem;
+}
+
+.form-control-lg{
+    min-height: 3rem;
+    height: 3rem;
+
+}
+
+.form-inline{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 20px;
+}
+.justify-content-center{
+    justify-content: center;
+}
+input[type=email] {
+    min-width: 15.125rem;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 12px;
+
+}
+.font-size-small{
+    font-size: .875rem;
 }

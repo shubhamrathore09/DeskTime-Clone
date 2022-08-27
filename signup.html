@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <style>
         .fa {
             padding: 15px 15px;
@@ -156,6 +158,7 @@
     </style>
 </head>
 <body>
+    <div id="nav"></div>
     <div id="container">
         <div id="login">
             <div id="heading">
@@ -190,6 +193,16 @@
         </div>
     
     </div>
+    <div id="footer"></div>
 </body>
 </html>
 <script src="signupscript.js"></script>
+<script type="module">
+    import footer from './script/footer.js';
+    document.getElementById("footer").innerHTML=footer
+
+</script>
+<script type="module">
+    import navbar from './script/navbar.js'
+    document.getElementById("nav").innerHTML=navbar
+</script>
