@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         *body{
             font-family:"Source Sans Pro",sans-serif;
@@ -66,7 +67,7 @@
             width:90%;
             padding:10px;
             margin:50px auto;
-            border:1px solid red;
+            
             display:grid;
             grid-template-columns: repeat(4,1fr);
             gap:10px;
@@ -79,7 +80,7 @@
 
         }
         .price_box{
-            border:1px solid blue;
+            
             width:97%;
             height:93%;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -110,7 +111,7 @@
             color: #475056;
         }
         #check{
-            border:1px solid red;
+           
             display:grid;
             grid-template-columns: 30px 200px;
             grid-template-rows: 40px;
@@ -136,6 +137,7 @@
             width:88%;
             border-radius: 7px;
             margin-bottom: 30px;
+            border:none;
         }
         #done2{
             margin-top:92px;
@@ -143,6 +145,7 @@
             width:88%;
             border-radius: 7px;
             margin-bottom: 30px;
+            border:none;
         }
         #done3{
             margin-top:50px;
@@ -150,6 +153,7 @@
             width:88%;
             border-radius: 7px;
             margin-bottom: 30px;
+            border:none;
         }
         #done4{
             margin-top:50px;
@@ -157,11 +161,280 @@
             width:88%;
             border-radius: 7px;
             margin-bottom: 30px;
+            border:none;
         }
         .needs{
             font-size: small;
             margin-top: -20px;
         }
+        .desk{
+            display:grid;
+            width:90%;
+            margin:auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 360px;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+            
+        }
+        .desk div:nth-child(2){
+            text-align: left;
+            background:#f8fdff;
+            border-radius: 20px;
+            margin-right: 30px;
+            padding-left: 20px;
+        }
+        .btnhover{
+            position:relative;
+            text-align: center;
+            height:30px;
+            width:100px;
+            border:1px solid #42a907;
+            outline:none;
+            color:#42a907;
+            background:#42a907;
+            color:white;
+            font-size:10px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-bottom: 10px;
+            transition:0.5s;
+        }
+        .btnhover:hover{
+            box-shadow:0 3px 30px 0 #42a907 inset, 0 3px 30px 0 #42a907,0 3px 30px 0 #42a907 inset, 0 3px 30px 0#42a907;
+            text-shadow:0 0 3px #42a907,0 0 3px #42a907;
+        }
+        .teamschoice{
+            height:380px;
+            width:100%;
+            background-color: #4EA819;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            margin:auto;
+        
+        }
+        .teamlogo{
+            display:grid;
+            width:90%;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            margin-top: -10px;
+        }
+        .teamlogo img,.teamlogo2 img{
+            width:80%;
+        }
+        .teamlogo2{
+            display:grid;
+            width:60%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            margin-top:-10px;
+        }
+        .trustteam{
+            height:340px;
+            width:100%;
+            background-color: white;
+            text-align: center;
+            margin-top: 0px;
+            padding-top: 20px;
+            margin:auto;
+        
+        }
+        .trustlogo{
+            display:grid;
+            width:90%;
+            grid-template-columns: repeat(6,1fr);
+            
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            padding-bottom: -10px;
+            margin-top: 20px;
+            gap:20px;
+        }
+        .trustlogo img{
+            margin-top: 30px;
+            width:100%;
+        }
+        .capterrausers{
+            display:grid;
+            width:100%;
+            margin:auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 280px;
+            justify-content: center;
+            align-items: center;
+            gap:30px;
+           
+            background-color: rgb(0, 128, 255);
+        }
+        .capterrausers img{
+            width:43%;
+            margin-left: 190px;
+        }
+        .checked {
+            color: orange;
+        }
+        .btnhover1{
+            height:40px;
+            width:150px;
+            border-radius: 4px;
+            background-color: #0870bb;
+            color: white;
+            font-size:large;
+            margin-left: 0px;
+            margin-bottom: -100px;
+            border:none;
+
+        }
+        .queries{
+            margin-top: 0px;
+            height:700px;
+            width:100%;
+            background-color: #e3ebf2;
+            text-align: center;
+            margin:auto;
+        }
+        .queries div{
+            text-align: left;
+            width:60%;
+           
+            margin-left: 230px;
+        }
+        .queries p{
+            line-height: 33px;
+            color:#475056
+        }
+        .queries h2{
+            margin-bottom:-10px;
+            color:#475056
+        }
+        .queries h1{
+            color:#475056;
+            margin-top: 50px;
+            padding-top: 40px;
+        }
+        .teamschoice2{
+            height:330px;
+            width:100%;
+            background-color: white;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            margin:auto;
+        
+        }
+        .teamlogo{
+            display:grid;
+            width:90%;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            margin-top: -10px;
+        }
+        .teamlogo img,.teamlogo2 img{
+            width:80%;
+        }
+        .teamlogo2{
+            display:grid;
+            width:60%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            margin-top:-10px;
+        }
+        .trustteam{
+            height:340px;
+            width:100%;
+            background-color: white;
+            text-align: center;
+            margin-top: 0px;
+            padding-top: 20px;
+            margin:auto;
+        
+        }
+        .trustlogo{
+            display:grid;
+            width:90%;
+            grid-template-columns: repeat(6,1fr);
+            
+            grid-template-rows: 120px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            margin:auto;
+            padding-bottom: -10px;
+            margin-top: 20px;
+            gap:20px;
+        }
+        .trustlogo img{
+            margin-top: 30px;
+            width:100%;
+        }
+        #check p{
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+        .starttrail{
+            height:220px;
+            width:100%;
+            background-color:#4EA819;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            margin:auto;
+        
+        }
+        .btnhover3{
+            position:relative;
+            text-align: center;
+            height:30px;
+            width:150px;
+            border:1px solid #4d087b;
+            outline:none;
+            color:#4d087b;
+            background:#4d087b;
+            color:white;
+            font-size:10px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-bottom: 10px;
+            transition:0.5s;
+        }
+        .btnhover3:hover{
+            box-shadow:0 3px 30px 0 #4d087b inset, 0 3px 30px 0 #086e7b,0 3px 30px 0 #4d087b inset, 0 3px 30px 0#4d087b;
+            text-shadow:0 0 3px #4d087b,0 0 3px #4d087b;
+        }
+        .starttrail input{
+            height:30px;
+            width:230px;
+        }
+        .starttrail p{
+            line-height:25px;
+        }
+        
+        
+        
+        
+        
         
 
         
@@ -208,7 +481,7 @@
                     <div><p>Mobile app</p></div>
                 </div>
                 
-                <input type="submit" id="done1" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <input type="submit" id="done1" value="SIGN UP" style="background-color:#4EA819; color:white; text-align: center"/>
 
             </div>
             <div class="price_box">
@@ -240,7 +513,7 @@
                     <div class="check"></div>
                     <div><p>Project time tracking</p></div>
                 </div>
-                <input type="submit" id="done2" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <input type="submit" id="done2" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center"/>
                 <p class="needs">No credit card required</p>
             </div>
             <div class="price_box">
@@ -276,7 +549,7 @@
                     <div class="check"></div>
                     <div><p>IP restrications</p></div>
                 </div>
-                <input type="submit" id="done3" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <input type="submit" id="done3" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center"/>
                 <p class="needs">No credit card required</p>
             </div>
             <div class="price_box">
@@ -312,11 +585,556 @@
                     <div class="check"></div>
                     <div><p>Custom API functions</p></div>
                 </div>
-                <input type="submit" id="done4" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <input type="submit" id="done4" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center"/>
                 <p class="needs">No credit card required</p>
             </div>
             
+            
         </div>
+        <div class="desk">
+            <div><img src="https://desktime.com/assets/img/landing/pricing/booking.png",alt=""/></div>
+            <div>
+                <h3 style="color:#475056">New function available-try Booking!</h3>
+                <p style="color:#475056">Book desks,meeting rooms,parking spaces, and more. Each booking can be customized to fit the team's needs. Everything is updated in real-time and can be viewed from a single booking grid. Try it for free!</p>
+                <h1 style="color:#475056; display:inline-block;">+$2.00</h1><p style="color:#475056; margin-top: -45px; padding-right: 200px; text-align: center;">User?month</p>
+                <button class="btnhover">Read More</button>
+            </div>
+
+        </div>
+        <div class="teamschoice">
+            <h1 style="color:white; font-size: xx-large;">High-performing teams choose Desktime</h1>
+            <p style="color:white; font-size: x-large; margin-top:-10px">Here are some of them</p>
+            <div class="teamlogo">
+                <div><img src="https://desktime.com/assets/img/clients/sixt-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/mapon-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/121corp-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/onthemap-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/truesix-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/printful-white.svg"alt=""/></div>
+            </div>
+            <div class="teamlogo2">
+                <div><img src="https://desktime.com/assets/img/clients/kreiss-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/setupad-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/ferrerpoirot-white.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/clients/montway-white.svg"alt=""/></div>
+            </div>
+        </div>
+        <div class="trustteam">
+            <h1 style="color:#475056; font-size: xx-large;">Highly rated. Globally trusted.</h1>
+            <p style="color:#475056; font-size: large; margin-top:-10px">DeskTime is one of the tracking apps on the market</p>
+            <div class="trustlogo">
+                <div><img src="https://desktime.com/assets/img/bs4/awards/g2-Leader-2022-small-business.png"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/bs4/awards/g2-Leader-2022.png"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/bs4/awards/g2-High-performer-2022-Asia.png"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/bs4/awards/softwaresuggest-award.png"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/bs4/awards/software-advice.png"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/bs4/awards/30daymoneyback-award.png"alt=""/></div>
+            </div>
+        </div>
+        <div class="capterrausers">
+            <div><img src="https://desktime.com/assets/img/features/new/capterra.svg",alt=""/></div>
+            <div>
+                <h1 style="color:white; font-size: xx-large;">DeskTime</h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-full" style="color:orange;"></span>
+                <p style="color:white; margin-top: -20px; padding-right: 350px; text-align: center;display:inline-block;">4.5/5</p>
+                <button class="btnhover1">241 reviews</button>
+                <p style="color:white; font-size: large; width:80%;">Reviews and ratings from real users on Capterra-software rating platform.</p>
+            </div>
+
+        </div>
+        <h1 style="color:#475056; font-size: xx-large;text-align: center;margin-bottom: -30px;">Comparison</h1>
+        <div class="price_container">
+            <div class="price_box" style="padding-bottom: 30px;">
+                <h1 style="color:#475056">Lite</h1><br>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Mobile app</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Productivity calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Idle time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Document title tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Project time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Cost calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Private time option</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Pomodoro timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Team contacts</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom reports</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>User integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic screenshots</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Absence calendar</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Shift Scheduling</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Invoicing</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Company integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Offline time approval</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>IP restrictions</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>VIP support</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Personalized onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited projects and tasks</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited data history</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom API functions</p></div>
+                </div>
+                
+                <input type="submit" id="done1" value="SIGN UP" style="background-color:#4EA819; color:white; text-align: center; margin-top: 50px;"/>
+
+            </div>
+            <div class="price_box" style="padding-bottom: 30px;">
+                <h1 style="color:#475056">Pro</h1><br>
+                
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Mobile app</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Productivity calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Idle time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Document title tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Project time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Cost calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Private time option</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Pomodoro timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Team contacts</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom reports</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>User integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic screenshots</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Absence calendar</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Shift Scheduling</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Invoicing</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Company integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Offline time approval</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>IP restrictions</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>VIP support</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Personalized onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited projects and tasks</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited data history</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom API functions</p></div>
+                </div>
+                <input type="submit" id="done2" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center;margin-top: 50px;"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            <div class="price_box" style="padding-bottom: 30px;">
+                <h1 style="color:#475056">Premium</h1><br>
+                
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Mobile app</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Productivity calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Idle time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Document title tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Project time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Cost calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Private time option</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Pomodoro timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Team contacts</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom reports</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>User integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic screenshots</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Absence calendar</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Shift Scheduling</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Invoicing</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Company integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Offline time approval</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>IP restrictions</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>VIP support</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Personalized onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited projects and tasks</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited data history</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom API functions</p></div>
+                </div>
+                <input type="submit" id="done3" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            <div class="price_box" style="padding-bottom: 30px;">
+                <h1 style="color:#475056">Enterprise</h1><br>
+                
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Mobile app</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>URL and app tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Integrated web timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Productivity calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Idle time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Document title tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Project time tracking</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Cost calculation</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Private time option</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Pomodoro timer</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Team contacts</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom reports</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>User integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Automatic screenshots</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Absence calendar</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Shift Scheduling</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Invoicing</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Company integrations</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Offline time approval</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>IP restrictions</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>VIP support</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Personalized onboarding</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited projects and tasks</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Unlimited data history</p></div>
+                </div>
+                <div id="check">
+                    <div class="check"></div>
+                    <div><p>Custom API functions</p></div>
+                </div>
+                
+                <input type="submit" id="done4" value="START FREE TRIAL" style="background-color:#4EA819; color:white; text-align: center"/>
+                <p class="needs">No credit card required</p>
+            </div>
+            
+            
+        </div>
+        <div class="queries">
+            <div>
+                <h1 style="font-size:40px;">Frequently asked questions</h1>
+                <h2>How much does DeskTime cost?</h2>
+                <p>DeskTime is free to try for 14 days and will always stay free for individual use with the LITE plan.Pricing plans start at $7/user and can go as low as  $5.50/user for larger teams, if paid annually.Find out more here.</p>
+                <h2>How can I subscribe?</h2>
+                <p>In order to start using DeskTime Pro, click on ‘Add payment method’, choose the payment type - Credit card or PayPal, enter billing details and click ‘Save payment method’. The selected payment method will be automatically charged each billing cycle. Read more here.</p>
+                <h2>What is the difference between monthly and annual billing?</h2>
+                <p>The monthly billing plan charges your payment method on the first day of every month. The annual payment method charges once a year on the date when the plan was started, and offers a free month of subscription compared to the monthly plan. Find out more here.</p>
+                <h2>How can I add or remove users from my plan?</h2>
+                <p>To change the amount of users in your plan, click on the “Manage members“ option under “Team members count“. From there you can select the new amount of employees you need using the slider and clicking “Update“. For a more detailed guide, read this article.</p>
+            </div>
+        </div>
+        <div class="teamschoice2">
+            <h1 style="color:#475056; font-size: xx-large;">High-performing teams choose Desktime</h1>
+            <div class="teamlogo">
+                <div><img src="https://desktime.com/assets/img/index/press/observer.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/ladders.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/businessinsider.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/lifehack.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/fitsmallbusiness.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/glassdoor.svg"alt=""/></div>
+            </div>
+            <div class="teamlogo2">
+                <div><img src="https://desktime.com/assets/img/index/press/mashable.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/forbes.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/thewashingtonpost.svg"alt=""/></div>
+                <div><img src="https://desktime.com/assets/img/index/press/themuse.svg"alt=""/></div>
+            </div>
+        </div>
+        <div class="starttrail">
+            <h1 style="color:white; font-size: xx-large;">Ready for your free trail?</h1>
+            <div style="width:50%;margin-left: 300px;">
+                <input type="text" id="freeemail" placeholder="Your work email"/>
+                <a href="DIZZY-STITCH-9009/signup.html"><button class="btnhover3" onclick="underclick()">GET STARTED</button></a>
+                <p style="color:white; margin-left: 80px; font-size: large; width:80%;">Try free for 14 days.No credit card required. By signing up,you agree to our terms and privacy policy.</p>
+            </div>
+            
+            
+        </div>
+        
+        
+        
         
         
 
