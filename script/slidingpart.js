@@ -11,15 +11,15 @@ function slide(){
             Here's what you need to know:
         </h3>
         <li class="li_class">Productivity bar -
-            <span>shows the time spent on the computer divided into 5-minute segments and categorized as Productive, Neutral, or Unproductive.</span>
+            <p>shows the time spent on the computer divided into 5-minute segments and categorized as Productive, Neutral, or Unproductive.</p>
         </li>
         <li class="li_class">
             Used apps -
-            <span>hovering your mouse over any of the bars will show you which URLs, documents, or applications were opened during each time segment.</span>
+            <p>hovering your mouse over any of the bars will show you which URLs, documents, or applications were opened during each time segment.</p>
         </li>
         <li class="li_class">
             Projects
-            <span>if you use the Project tracking function, this is where you'll see the tasks you've worked on and their total time.</span> 
+            <p>if you use the Project tracking function, this is where you'll see the tasks you've worked on and their total time.</p> 
         </li>
 
         <img src="https://desktime.com/assets/img/bs4/intro/my-desktime.png" alt="">

@@ -11,6 +11,9 @@
     
     <link rel="stylesheet" href="./style/footer.css">
 
+    <link rel="stylesheet" href="./shikhu_chatbot/chatbot.css">
+    <link rel="stylesheet" href="./shikhu_chatbot/bot.css">
+
 
     
 </head>
@@ -20,6 +23,14 @@
         <script type="module">
             import sidenav from './script/desknav.js'
             document.getElementById("sidenav_nav").innerHTML=sidenav
+
+            let person_em=JSON.parse(localStorage.getItem("storeDetails"));
+            let nam=person_em[0].name
+            document.getElementById("save_name").innerHTML=null;
+            document.getElementById("save_name").innerHTML=nam;
+            document.getElementById("save_latter").innerHTML=null;
+            document.getElementById("save_latter").innerText=nam[0]
+
         </script>
     </div>
 
@@ -31,14 +42,7 @@
                 import slide from './script/slidingpart.js'
                 document.getElementById("slide_help").innerHTML=slide;
             </script>
-
             </div>
-
-
-
-
-
-
     <div id="mydesk_main">
         <h2>My DeskTime</h2>
         <div class="mydesk_right">
@@ -75,33 +79,33 @@
 
         <div>
             <p>PRODUCTIVITY TIME</p>
-            <h1 id="mydesk_t">0<span>s</span></h1>
+            <h1 id="mydesk_t">0<p>s</p></h1>
             
         </div>
 
         <div>
             <P>DESKTIME TIME</P>
-            <h1 id="mydesk_four">0<span>s</span></h1>
+            <h1 id="mydesk_four">0<p>s</p></h1>
            
         </div>
         <div>
             <P>UNPRODUCTIVE TIME</P>
-            <h1 id="mydesk_five">0<span>s</span></h1>
+            <h1 id="mydesk_five">0<p>s</p></h1>
             
         </div>
         <div>
             <P>TIME AT WORK</P>
-            <h1 id="mydesk_six">0<span>s</span></h1>
+            <h1 id="mydesk_six">0<p>s</p></h1>
             
         </div>
         <div>
             <P>EFFECTIVENESS</P>
-            <h1 id="mydesk_seven">0<span>%</span></h1>
+            <h1 id="mydesk_seven">0<p>%</p></h1>
   
         </div>
         <div>
             <P>PRODUCTIVITY</P>
-            <h1 id="mydesk_e">0<span>%</span></h1>
+            <h1 id="mydesk_e">0<p>s</p></h1>
             
         </div>
     </div>
@@ -190,18 +194,25 @@
             </p>
         </div>
     </div>
-
-
-
-
-    
 <div id="footer">
 
 </div>
 
 </div>
+
+<div id="chat">
+    <script type="module">
+        import chat from './shikhu_chatbot/one.js'
+        document.getElementById("chat").innerHTML=chat;
+    </script>
+</div>
+
 </body>
 </html>
+
+
+
+
 <script src="./script/mydesk.js">
 
 </script>
@@ -226,6 +237,12 @@ function openNav() {
     }
 }
 </script>
+
+<script src="./shikhu_chatbot/response.js"></script>
+<script src="./shikhu_chatbot/app.js"></script>
+<script src="./shikhu_chatbot/chatbot.js"></script>
+<script src="./shikhu_chatbot/chatbotservice.js"></script>
+
 
 <script type="module">
     import mydesk_footer from './script/mydesk_footer.js';

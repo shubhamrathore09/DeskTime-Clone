@@ -57,6 +57,7 @@ body{
 }
 #mydesk_timing>div>h1{
     margin-left: 10px;
+    display: flex;
 }
 #mydesk_f{
     color: #4EA819;
@@ -212,7 +213,7 @@ body{
     font-weight: bold;
     color: #1b1b1b;
 }
-.li_class>span{
+.li_class>p{
     font-weight: 400;
     color: #999DA1;
 }
