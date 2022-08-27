@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="/dizzy-stitch-9009/style/footer.css">
     <link rel="stylesheet" href="./demo.css">
     <link rel="stylesheet" href="./style/navbar.css">
+    
+    <link rel="stylesheet" href="./shikhu_chatbot/chatbot.css">
+    <!-- <script src="./shikhu_chatbot/response.js" defer></script> -->
+    <script src="https://kit.fontawesome.com/777c85ebe0.js" crossorigin="anonymous"></script>
+    <script src="./shikhu_chatbot/chatbot.js"></script>
     <style>
         .slider-wrap {
             width: 100%;
@@ -1000,10 +1005,17 @@
             </p>
         </div>
     </div>
+    <div id="chat"></div>
     <div id="footer"></div>
 </body>
 
 </html>
+
+<script type="module">
+    import chat from './shikhu_chatbot/one.js'
+    document.getElementById("chat").innerHTML=chat ;
+</script>
+<script src="./shikhu_chatbot/chatbot.js" defer></script>
 
 
 
