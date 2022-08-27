@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
  /* navigation bar details */
-/* body {
-    margin: 0px;
-    padding: 0px;
+ * {
+   
     box-sizing: border-box;
 
 
-} */
+} 
 
-
+body{
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -22,7 +24,8 @@ div {
     border: none; /* 1px solid green; */
 }
 #container_1 {
-   
+
+
     background-image: url(./images/background.PNG);
     color: #ffff;
     text-align: center;
@@ -40,9 +43,12 @@ div {
     padding: 2%;
 }
 #inp-btn {
+  
+
     margin: 0px 0px 30px;
     font-size: 25px;
     padding: 1%;
+    margin-top: 90px;
 }
 #inp-btn > form > input {
     color: #bfc3cc;
@@ -232,6 +238,7 @@ p {
     height: 530px;
     width: 69%;
     margin: auto;
+  
     /* border: 1px solid green; */
 }
 #col1 {
@@ -248,7 +255,7 @@ p {
     border: 1px solid #c8ccce;
     border-radius: 5px;
     margin: 5px 0px 5px 0px;
-
+ 
 }
 .itemBox > div > img {
     width: 70px;
@@ -307,14 +314,14 @@ gap: 40px;
 
 
 .dual > .notes_btn > .a_btn:hover {
-    background-color: #357410;
+    /* background-color: #357410; */
 }
 .dual > .notes_btn > .a_btn {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     width: 72%;
     height: 30px;
-    background-color: #4EA819;
+    /* background-color: #4EA819; */
     text-align: center;
     padding: 10px;
     margin: 10px 0px 0px;
@@ -462,7 +469,15 @@ gap: 40px;
     color: #FFFFFF;
     font-size: 22.5px;
 }
-
+.a_btn>a{
+   
+    padding-bottom: 10px;
+      background-color: #4EA819;
+      padding: 5px;
+}
+.a_btn>a:hover{
+    background-color: red;
+}
 
 /* @media only screen and (max-width: 600px) {
     body {

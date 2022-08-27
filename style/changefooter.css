@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 #changefooter{
-    width: 80%;
+    width: auto;
     padding: 64px 10%;
     background-color: #4EA819;
     text-align: center;

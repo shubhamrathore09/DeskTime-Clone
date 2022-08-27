@@ -29,11 +29,11 @@ body{
     border-bottom: 2px solid black;
 }
 #footer_social{
-    width: 80%;
+    width: auto;
     background-color: #EBECEC;
     display: flex;
     justify-content: space-between;
-    padding: 40px 15%;
+    padding: 40px 10%;
     margin-top: 50px;
  
 }
@@ -109,8 +109,8 @@ body{
 
 #footer_third{
     background-color: #D6D8D9;
-    padding: 10px 15%;
-    width: 70%;
+    padding: 10px 10%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     font-family: sans-serif;
