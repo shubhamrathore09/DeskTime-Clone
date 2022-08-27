@@ -3,12 +3,15 @@ body{
     padding: 0;
 }
 .footer_tab{
-    width: 70%;
+    width: 80%;
     margin: auto;
+    margin-top: 45px;
     font-family: sans-serif;
     /* margin-bottom: 10px; */
+
     margin-top: 50px;
     height: auto;
+
 }
 .footer_tab>thead>tr>td{
     font-weight: bold;
@@ -29,12 +32,13 @@ body{
     border-bottom: 2px solid black;
 }
 #footer_social{
-    width: 70%;
+    width: 80%;
     background-color: #EBECEC;
     display: flex;
     justify-content: space-between;
     padding: 40px 15%;
     margin-top: 50px;
+ 
 }
 .footer_forsocial{
     width: 40%;

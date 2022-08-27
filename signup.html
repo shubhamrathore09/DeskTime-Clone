@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <style>
+        .fa {
+            padding: 15px 15px;
+            font-size: 10px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            width:5px;
+            height:3px;
+            
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            width:5px;
+            height:3px;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+            width:5px;
+            height:3px;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+            width:5px;
+            height:3px;
+        }
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            width:5px;
+            height:3px;
+        }
+        #container{
+            
+            width:20%;
+            height:auto;
+            margin:auto;
+            margin-top:90px;
+            font-family: "Source Sans Pro";
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+            padding-top: 2px;
+        } 
+        #container #login{
+            
+            width:100%;
+            height:auto;
+            text-align: center;
+            padding-top:-10px
+
+        }     
+        #signup input{
+            width:85%;
+            height:25px;
+            margin:5px 0px 5px 0px; 
+            text-align: left;
+            font-size: x-small;
+            padding-left: 10px;
+            
+        } 
+        #signup label{
+            padding-right:180px;
+            padding-top: 0px;
+            font-size: x-small;
+            
+        }
+        #signup label:nth-child(1){
+            padding-right:140px;
+        }
+        #signup #takeemail{
+            padding-right:198px;
+        }
+        #login #heading{
+            width:100%;
+            height:70px;
+            margin:auto;
+           
+            padding-top: -10px;
+            padding-bottom: 0px;
+            text-align: center;
+            
+        }
+        #signup #done{
+            height:35px;
+            width:92%;
+        }
+        #heading p{
+           margin-top: -10px;
+        }
+        #signup h5{
+            font-size: x-small;
+            margin-top:0px
+        }
+        #secondcontainer{
+            width:100%;
+            height:auto;
+            margin:auto;
+            
+            text-align: center;
+            margin-top: 0px;
+        }
+        #logo{
+            display:flex;
+            margin:auto;
+            width:70%;
+            grid-template-columns: repeat(5,1fr);
+            gap: 5px;
+            justify-content: center;
+        }
+        #logo div{
+            display:flex;
+            width:100%;
+            grid-template-columns: repeat(5,0.5fr);
+            grid-template-rows: 20px;
+            
+        
+        }
+        .alias {
+            cursor:alias;
+        }
+        #secondcontainer h5{
+            font-size: x-small;
+            margin-top: 0px;
+            padding-bottom: 10px;
+        }
+   
+        
+            
+       
+
+
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+    <div id="container">
+        <div id="login">
+            <div id="heading">
+                <h4><b>Sign up for a FREE DeskTime trial</b></h4>
+                <p style="width:100%;font-size: x-small;">Start tracking your productivity in less than a minute!</p>
+            </div>
+            <form id="signup">
+                <label for="name">First and Last name</label><br>
+                <input id="name" type="text" placeholder="Type in your first and last name"/><br>
+                <label id="takeemail" for="signup">Email</label><br>
+                <input id="email" type="text" placeholder="Type in your email address"/><br>
+                <label for="psw">Password</label><br>
+                <input id="password" type="number" placeholder="Create a password"/><br>
+                <input type="submit" id="done" value="SIGN UP FOR FREE" style="background-color:#4EA819; color:white; text-align: center"/>
+                <h5 style="text-decoration:underline;font-weight:bold;">I forgot my password</h5>
+                <h5>try free for 14 days. No credit card required.By signing up, you agree to our<b style="text-decoration:underline;"> terms and privacy policy.</b></h5>
+            </form>
+
+        </div>
+    
+        <div id="secondcontainer">
+            <h5><b>Or connect with</b></h5>
+        
+            <div id="logo">
+                <div><a href="#" class="fa fa-facebook"></a></div>
+                <div><a href="#" class="fa fa-twitter"></a></div>
+                <div><a href="#" class="fa fa-google"></a></div>
+                <div><a href="#" class="fa fa-linkedin"></a></div>
+                <div><a href="#" class="fa fa-snapchat-ghost"></a></div>
+            </div>
+            <h5>Are you already registered?<a href="login.html" class="alias"style="text-decoration:underline;">Log in here</a></h5>
+        </div>
+    
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="signupscript.js"></script>
+<script type="module">
+    import footer from './script/footer.js';
+    document.getElementById("footer").innerHTML=footer
+
+</script>
+<script type="module">
+    import navbar from './script/navbar.js'
+    document.getElementById("nav").innerHTML=navbar
+</script>
