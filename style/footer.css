@@ -29,7 +29,7 @@ body{
     border-bottom: 2px solid black;
 }
 #footer_social{
-    width: 100%;
+    /* width: 80%; */
     background-color: #EBECEC;
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ body{
 #footer_third{
     background-color: #D6D8D9;
     padding: 10px 15%;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     font-family: sans-serif;

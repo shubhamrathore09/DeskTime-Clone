@@ -19,7 +19,7 @@ function sidenav(){
 <div id="main">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="sidebar_main"><input type="text" name="" id="" placeholder="Search" ><i class="fa-solid fa-magnifying-glass"></i></div>
-    <div class="sidebar_main_name" id="name_main"><i class="fa-solid fa-bell"></i><div><p id="save_name">shubham</p><p id="save_company_name">rathore</p></div> <h1 id="save_latter">S</h1></div>
+    <div class="sidebar_main_name" id="name_main"><i class="fa-solid fa-bell"></i><div><p id="save_name">shubham</p></div> <h1 id="save_latter">S</h1></div>
   
 </div>
 <div id="second_nav">

@@ -65,12 +65,12 @@ let actual_time=`${hours}:${minuts}`
     id= setInterval(function(){
     console.log(count)
     count++
-    if(count==5){
+    if(count==60){
         min++;
         console.log(min)
         count=0
     }
-    if(min==2){
+    if(min==60){
         hour++;
         min=0;
         count=0;
