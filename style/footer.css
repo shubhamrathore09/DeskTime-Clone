@@ -29,11 +29,11 @@ body{
     border-bottom: 2px solid black;
 }
 #footer_social{
-    width: 100%;
+    width: 80%;
     background-color: #EBECEC;
     display: flex;
     justify-content: space-between;
-    padding: 40px 15%;
+    padding: 40px 10%;
     margin-top: 50px;
  
 }

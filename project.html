@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/sidenav.css">
+    <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/mydesk.css">
+    <link rel="stylesheet" href="./style/project.css">
+
+    
+</head>
+<body>
+    
+    <div id="sidenav_nav">
+ 
+        <script type="module">
+            import sidenav from './script/desknav.js'
+            document.getElementById("sidenav_nav").innerHTML=sidenav
+        </script>
+
+    </div>
+
+  
+    <div id="slide_help">
+
+   
+<script type="module">
+    import slide from './script/slidingpart.js'
+    document.getElementById("slide_help").innerHTML=slide;
+</script>
+
+</div>
+
+
+<div id="project_contain">
+
+    <div id="project_detail">
+        <div>
+        <h1>Project</h1>
+        <p>DeskTime Projects allow you to track the time you and your team spend on certain projects and tasks.
+             You can see the actual scope of your projects, calculate their costs, and bill your clients accordingly.</p>
+             <h4>Things to know:</h4>
+             <ul>
+                <li>You can filter and search projects and tasks here.</li>
+                <li>To add a project, use the “New Project” button.</li>
+                <li>You can assign projects to all company members or specific employees, set hourly rates, and estimate project costs and time.</li>
+                <li>You can start tracking your first project via the desktop app or the webtimer.</li>
+                <li>It's possible to connect DeskTime projects with your project management apps (Asana, JIRA, or others).</li>
+             </ul>
+            </div>
+            <div>
+                <img src="https://desktime.com/assets/img/bs4/intro/projects.png" alt="">
+            </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
+<script src="./script/mydeskopen.js">
+</script>
+
+<script src="./script/mydesk.js"></script>
+

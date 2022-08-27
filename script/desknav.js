@@ -24,13 +24,13 @@ function sidenav(){
 </div>
 <div id="second_nav">
 <h3>Get started with DeskTime <input type="range"></h3>
-<button><span>1</span>Start tracking time</button>
-<button><span>2</span>Create a project</button>
-<button><span>3</span>Desktop App</button>
-<button><span><i class="fa-solid fa-check"></i></span>web timer</button>
+<button onclick="start_tracking()"><span>1</span>Start tracking time</button>
+<button onclick="start_track()"><span>2</span>Create a project</button>
+<button onclick="start_app()"><span>3</span>Desktop App</button>
+<button onclick="start_web()"><span><i class="fa-solid fa-check"></i></span>web timer</button>
 <button><span>5</span>Edit the setting</button>
 <button><span>6</span>subscribe to DeskTime</button>
-<a href="">Help</a>
+<a href="#" onclick=new_help()>Help</a>
 </div>`
 }
 export default sidenav();

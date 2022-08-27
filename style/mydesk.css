@@ -1,10 +1,16 @@
+body{
+    background-color: #eceff3;
+}
+#total_div{
+    margin-left: 100px;
+}
 #mydesk_main{
-    margin-top: 200px;
-    display: flex;
-    border: 1px solid red;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 50px;
+   margin-top: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-right: 20px;
+   margin-bottom: 20px;
 }
 .mydesk_right{
     display: flex;
@@ -23,6 +29,7 @@
 #check{
     display: none;
 }
+
 .mydesk_right>div:nth-last-child(1)>button{
     background-color: #4EA819;
     border: none;
@@ -34,22 +41,35 @@
 #mydesk_timing{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 180px 180px;
     gap: 40px;
-    margin-left: 50px;
     color: #999DA1;
     font-family: sans-serif;
-  
+    margin-right: 20px;
 }
 #mydesk_timing>div{
-    padding: 0px 10px;
+    padding: 10px 10px;
     /* height: 100px; */
+    background-color: #fff;
 }
 #mydesk_timing>div>img{
     width: 100%;
 }
 #mydesk_timing>div>h1{
     margin-left: 10px;
+}
+#mydesk_f{
+    color: #4EA819;
+}
+#mydesk_s{
+    color: red;
+}
+#mydesk_main label i{
+    cursor: pointer;
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
 }
 #stop{
     display: flex;
@@ -59,16 +79,248 @@
     background-color: #333c43;
     color: #fff;
     padding: 1rem 0.75rem;
-    z-index: 1040;
+    z-index: 1;
     min-width: 175px;
     border-radius: 20px;
     cursor: pointer;
+    position: fixed;
+    top: 700px;
+    left: 400px;
 }
 #stop button{
     background-color: transparent;
     color: #ffffff;
     border: none;
 }
+#stop>div{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
 #stop button i{
     cursor: pointer;
+}
+#dele_alert{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px 0px;
+    position: fixed;
+    top: -100%;
+    left: 35%;
+    transition: all 1s;
+}
+#dele_alert button{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 7px 10px;
+}
+.del_yes{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.del_no{
+    background-color: #4EA819;
+    color: white;
+    border: none;
+}
+.productivity{
+    width: auto;
+    height: 250px;
+    background-color: white;
+    /* margin-left: 50px; */
+    margin-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.productivity>p{
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.pro_prograss{
+    width: auto;
+    padding: 5px 0px ;
+    background-color: #999DA1;
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 30px;
+    /* margin-top: 160px; */
+}
+.pro_time{
+    width: auto;
+    margin-right: 20px;
+    margin-left: 30px;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+    color: #999DA1;
+}
+.productive_app{
+   background-color: #ffffff; 
+   height: 140px;
+   margin-right: 20px;
+   margin-top: 20px;
+}
+.productive_app>div:nth-child(1){
+    background-color: #4EA819;
+    height: 15%;
+    color: white;
+    padding: 20px;
+}
+.productive_app>div:nth-child(2){
+    height: 60%;
+    text-align: center;
+    margin-top: 29px;
+}
+#my_help{
+    width: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+    position:absolute;
+    left: 25%;
+    top: -120%;
+    /* display: none; */
+    transition: all 1s;
+}
+#my_help>div:nth-child(1){
+    height: 60px;
+    background-color: #4EA819;
+    padding: 0px 20px;
+    
+
+}
+#my_help>div:nth-child(1)>p{
+    padding: 20px 0px 0px 0px;
+    color: white;
+}
+#my_help>div:nth-child(2){
+    padding: 0px 20px;
+    font-family: sans-serif;
+    color: #999DA1;
+    line-height: 25px;
+}
+#my_help>div:nth-child(2)>h3{
+    color: #1b1b1b;
+}
+.li_class{
+    font-weight: bold;
+    color: #1b1b1b;
+}
+.li_class>span{
+    font-weight: 400;
+    color: #999DA1;
+}
+
+#my_help>div:nth-child(2)>img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#my_help>button{
+  margin-left: 10px;
+  padding: 7px 12px;
+  background-color: transparent;
+  border: 2px solid #999DA1;
+  cursor: pointer;
+}
+
+.cencel_help{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.start_tracking{
+    width:50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 25%;
+    top: -120%;
+    transition: all 1s;
+}
+.start_head{
+    background-color: #4EA819;
+    padding: 15px;
+}
+.start_head>p{
+    color: #ffffff;
+}
+.start_food{
+    padding: 0px 10px;
+    background-color: transparent;
+    display: flex;
+    margin: auto;
+}
+
+.start_food>ol{
+    margin-left: 20px;
+    padding: 10px 0px
+
+}
+.start_food>ol li{
+    margin-top: 10px;
+    line-height: 25px;
+    padding-bottom:20px;
+}
+.start_img{
+    width: 50%;
+}
+.start_img>img{
+    width: 100%;
+}
+#project_track{
+    width:50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 25%;
+    top: -120%;
+    transition: all 1s;
+}
+#desk_app{
+    width:50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 25%;
+    top: -120%;
+    transition: all 1s;
+}
+#web_timer{
+    width:50%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 25%;
+    top: -120%;
+    transition: all 1s;
+}
+#new_help{
+    width:35%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 33%;
+    top: -120%;
+    transition: all 1s;
+    font-family: sans-serif;
+}
+.start_food>ol>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #4EA819;
+}
+.start_food>ol>li>a:hover{
+    text-decoration: underline;
+}
+@media (max-width:850px) and (min-width:100px){
+    #mydesk_timing{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 180px 180px 180px 180px;
+    }
 }
