@@ -1,13 +1,16 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
  /* navigation bar details */
-/* body {
+body {
     margin: 0px;
     padding: 0px;
+}
+
+*{
     box-sizing: border-box;
-
-
-} */
+}
 
 
 
@@ -28,8 +31,11 @@ div {
     text-align: center;
     margin: auto;
     margin-top: 70px;
-    height: 485px;
-    width: 95%;
+    height: 530px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    
 }
 #intro {
     width: 60%;
@@ -316,7 +322,7 @@ gap: 40px;
     height: 30px;
     background-color: #4EA819;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px 0px 0px;
     border-radius: 5px;
 }

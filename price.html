@@ -10,9 +10,17 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./shikhu_chatbot/chatbot.css">
+    <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
     <style>
-        *body{
+        body{
             font-family:"Source Sans Pro",sans-serif;
+            margin: 0;
+        padding: 0;
+        }
+        *{
+            box-sizing: border-box;
+            
         }
         #main_heading{
             font-family: "Source Sans Pro";
@@ -33,7 +41,7 @@
         }
         .button-box{
             width:200px;
-            margin:25px;
+           
             position:relative;
             border-radius:30px;
             background:#d1e0eb;
@@ -41,6 +49,7 @@
             display:flex;
             /* justify-content:space-between; */
             gap:0px;
+            margin: auto;
 
         }
         .toggle-btn{
@@ -88,11 +97,11 @@
             transition:1s;
             text-align: center;
             border-radius: 30px;
-            z-index:1;
+            
         }
         .price_box:hover{
             transform:scale(1.15);
-            z-index:1;
+            
         }
         
         
@@ -118,6 +127,7 @@
         }
         #check p{
             text-align: left;
+            text-decoration: none;
         }
         .price_box .cost,.price_box h3 {
             margin-top: -20px;
@@ -1120,7 +1130,7 @@
         </div>
         <div class="starttrail">
             <h1 style="color:white; font-size: xx-large;">Ready for your free trail?</h1>
-            <div style="width:50%;margin-left: 300px;">
+            <div style="width:50%;margin: auto;">
                 <input type="text" id="freeemail" placeholder="Your work email"/>
                 <a href="DIZZY-STITCH-9009/signup.html"><button class="btnhover3" onclick="underclick()">GET STARTED</button></a>
                 <p style="color:white; margin-left: 80px; font-size: large; width:80%;">Try free for 14 days.No credit card required. By signing up,you agree to our terms and privacy policy.</p>
@@ -1136,9 +1146,19 @@
 
     </div>
     <div id="footer"></div>
+
+    <div id="chat">
+        <script type="module">
+            import chat from './shikhu_chatbot/one.js'
+            document.getElementById("chat").innerHTML=chat;
+        </script>
+    </div>
     
 </body>
 </html>
+
+<script src="./shikhu_chatbot/chatbot.js"></script>
+
 <script type="module">
     import footer from './script/footer.js';
     document.getElementById("footer").innerHTML=footer

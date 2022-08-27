@@ -7,7 +7,7 @@ function navbar() {
 
     </div>
     <div id="navbar">
-        <input type="checkbox" id="check" onclick="check()">
+        <input type="checkbox" id="check_div" onclick="check()">
         <label for="check" class="checkbtn">
         <i class="fa fa-bars"></i>
        
@@ -22,9 +22,9 @@ function navbar() {
         <ul>
             <li> <a href="./demo.html">Demo</a></li>
             <li>  <a href="fe.html">Feature</a></li>
-            <li><a href="">Pricing</a></li>
+            <li><a href="price.html">Pricing</a></li>
             <li><a href="">About Us</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li class="li_but"><button><a href="">LOGIN</a></button></li>
             <li class="li_but"><button id="navbar_last_but"><a href="">SIGN-UP</a></button></li>

@@ -2,8 +2,6 @@
 function chat(){
 
 return `
-
-
 <div id="chatbot_div">
 <button style="font-size: 20px" class="open-chat" onclick="openForm()"><i class="fa-solid fa-comment"></i>
     chat</button>
@@ -37,15 +35,11 @@ return `
         
         <span id="chatid6"></span>
         <br><br>
-        <a href="booklivechat.html"><span id="chatid7"></span></a>
+        <a href="shikhu_chatbot/live_chat.html"><span id="chatid7"></span></a>
         <br><br>
         <span id="chatid8"></span>
         <br><br>
-        <a href="live_chat.html"><span id="chatid9"></span></a>
-        
-
-
-
+        <a href="shikhu_chatbot/live_chat.html"><span id="chatid9"></span></a>
     </div>
 
     <div id="chat_footer">
@@ -63,8 +57,6 @@ return `
 </form>
 
 </div>
-
-
 `
 }
 export default chat();
