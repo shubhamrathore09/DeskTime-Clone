@@ -413,3 +413,25 @@ left: 70px;
 #changefooter{
     margin-top: 60px;
 }
+.dd{
+    text-align: center;
+}
+.ce_flex{
+    display: flex;
+    gap: 10px;
+   
+}
+.ce_flex>div{
+   
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid grey;
+    text-align: center;
+}
+.ce_flex>div>img{
+    width: 200px;
+}
+#carouselExampleCaptions{
+    width: 80%;
+    margin: auto;
+}

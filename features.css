@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
  /* navigation bar details */
-body {
+/* body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 
 
-}
+} */
 
 
 
@@ -22,10 +22,12 @@ div {
     border: none; /* 1px solid green; */
 }
 #container_1 {
+   
     background-image: url(./images/background.PNG);
     color: #ffff;
     text-align: center;
     margin: auto;
+    margin-top: 70px;
     height: 485px;
     width: 95%;
 }

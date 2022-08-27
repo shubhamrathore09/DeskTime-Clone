@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>features</title>
+<link rel="stylesheet" href="./style/changefooter.css">
+<link rel="stylesheet" href="./style/footer.css">
+<script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="features.css">
+<link rel="stylesheet" href="./style/navbar.css">
+<script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
+<script src="./script/navbarfunction.js">
+</script>
 </head>
 <body>
-   <div class="feature_navbar">
+   <div id="feature_navbar">
 <!-- put the navbar -->
 
    </div>
@@ -391,10 +399,26 @@
   
 <!-- footer part -->
 
-  
+<div id="changefooter"></div>
 
-<div class="feature_footer"></div>
+<div id="ff_footer"></div>
 
 
 </body>
 </html>
+<!-- 
+<div class="feature_navbar"> -->
+    <script type="module">
+        import navbar from './script/navbar.js'
+        document.getElementById("feature_navbar").innerHTML=navbar
+
+        
+    import footer from './script/footer.js';
+    document.getElementById("ff_footer").innerHTML=footer
+
+    </script>
+    <script type="module">
+        import changingfooter from './script/changingfooter.js'
+        document.getElementById("changefooter").innerHTML=changingfooter
+    </script>
+    
