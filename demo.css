@@ -257,6 +257,7 @@ p {
 .lazyload {
     width: 13%;
     border-radius: 50%;
+    margin-top: 2px;
 }
 
 .main {
@@ -273,7 +274,7 @@ p {
 
 .nextprevBtn {
     position: absolute;
-    top: 40%;
+    top: 60%;
     border: 1px solid green;
     background-color: green;
     color: white;
@@ -284,12 +285,15 @@ p {
 
 .d-inline-block {
     display: inline-block;
-    width: 10%;
+    width: 15%;
 }
 
 .media {
     display: flex;
     align-items: flex-start;
+}
+.media-body{
+    margin-left: 12px;
 }
 
 .card-body {

@@ -10,6 +10,89 @@
     <link rel="stylesheet" href="/dizzy-stitch-9009/style/footer.css">
     <link rel="stylesheet" href="./demo.css">
     <link rel="stylesheet" href="./style/navbar.css">
+    <style>
+        .slider-wrap {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            height: 100%;            
+        }
+
+        .slider-main {
+            position: absolute;
+            width: 247%;
+            
+        }
+
+        .item {
+            width: 40%;
+            /* display: inline-block; */
+            display: flex;
+            /* background: #e44; */
+            position: relative;
+            height: 388px;
+            /* border: 2px dashed #ae0d0d; */
+            margin: 4px;
+            gap: 20px;
+        }
+
+        /* .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #fff;
+            font-weight: bolder;
+        } */
+
+        .btn-area {
+            position: absolute;
+            bottom: 6px;
+            left: 50%;
+        }
+
+
+        .container-fluid {
+            width: 80%;
+            height: 400px;
+            /* border: 2px solid black; */
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* .nextprevBtn {
+            position: relative;
+            top: 40%;
+        } */
+
+        #pre {
+            left: 80px
+        }
+
+        #next {
+            right: 80px;
+        }
+
+        .product {
+            background-color: aliceblue;
+        }
+
+        .item>div {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            /* border: 1px solid black; */
+            padding: 20px;
+        }
+        .ps-rel{
+            position: relative;
+        }
+        .item{
+            transition-timing-function: ease;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +105,8 @@
                     a
                     personalized 1:1 DeskTime demo and answer any questions you might have.</p>
                 <div class="btns">
-                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn-primary">BOOK A DEMO</a>
-                    <a href="#" class="btn-secondary">START A FREE TRIAL</a>
+                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn btn-primary">BOOK A DEMO</a>
+                    <a href="#" class="btn btn-secondary">START A FREE TRIAL</a>
                 </div>
             </div>
             <div>
@@ -112,9 +195,9 @@
                     <li>Grasp shift and absence scheduling.</li>
                 </ul>
                 <div class="btns">
-                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn-primary">START A FREE
+                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn btn-primary">START A FREE
                         TRIAL</a>
-                    <a href="#" class="btn-secondary">BOOK A DEMO</a>
+                    <a href="#" class="btn btn-secondary">BOOK A DEMO</a>
                 </div>
             </div>
             <div>
@@ -144,9 +227,9 @@
                     <li>See what's causing constraints in your day.</li>
                 </ul>
                 <div class="btns">
-                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn-primary">START A FREE
+                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn btn-primary">START A FREE
                         TRIAL</a>
-                    <a href="#" class="btn-secondary">BOOK A DEMO</a>
+                    <a href="#" class="btn btn-secondary">BOOK A DEMO</a>
                 </div>
             </div>
         </div>
@@ -166,9 +249,9 @@
                     <li>Boost productivity to raise your income.</li>
                 </ul>
                 <div class="btns">
-                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn-primary">START A FREE
+                    <a href="https://calendly.com/sales-desktime/desktime-demo" class="btn btn-primary">START A FREE
                         TRIAL</a>
-                    <a href="#" class="btn-secondary">BOOK A DEMO</a>
+                    <a href="#" class=" btn btn-secondary">BOOK A DEMO</a>
                 </div>
             </div>
             <div>
@@ -220,96 +303,687 @@
             </div>
         </div>
     </div>
-    <div class="eight-div demo-page">
-        <div class="main">
-            <div class="container">
-                <div class="shadow">
-                    <div class="card-body">
-                        <p>Given the pandemic, we were looking for contactless options to replace our legacy time
-                            &amp;
-                            attendance management systems, which required manual input from users. We found DeskTime
-                            to
-                            be an effective tool that provides undisputable insights to both end-users &amp;
-                            reporting
-                            managers, establishes transparency, and does not violate end-user privacy.</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="media">
-                            <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg" alt="">
-                            <div class="media-body">
-                                <strong>
-                                    V M Samir
-                                    <a href="">
-                                        <img class="d-inline-block"
-                                            src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg" alt="">
-                                    </a>
-                                </strong><br>
-                                CIO at
-                                <a href="#" target="_blank">Rustomjee</a>
+    <div class="eight-div demo-page ps-rel">
+        <h3 style="text-align: center;">Here's why managers and CEOs <br> choose DeskTime</h3>
+        <div class="container-fluid">
+            <div class="slider-wrap">
+                <div class="main slider-main" id="slider-main">
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/monteloeder.png"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/brad.png"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="shadow">
-                    <div class="card-body">
-                        <p>Given the pandemic, we were looking for contactless options to replace our legacy time
-                            &amp;
-                            attendance management systems, which required manual input from users. We found DeskTime
-                            to
-                            be an effective tool that provides undisputable insights to both end-users &amp;
-                            reporting
-                            managers, establishes transparency, and does not violate end-user privacy.</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="media">
-                            <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg" alt="">
-                            <div class="media-body">
-                                <strong>
-                                    V M Samir
-                                    <a href="">
-                                        <img class="d-inline-block"
-                                            src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg" alt="">
-                                    </a>
-                                </strong><br>
-                                CIO at
-                                <a href="#" target="_blank">Rustomjee</a>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/gotham-management-inc.png"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/proprofs.png"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/alsam-hasib.png"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="shadow">
-                    <div class="card-body">
-                        <p>Given the pandemic, we were looking for contactless options to replace our legacy time
-                            &amp;
-                            attendance management systems, which required manual input from users. We found DeskTime
-                            to
-                            be an effective tool that provides undisputable insights to both end-users &amp;
-                            reporting
-                            managers, establishes transparency, and does not violate end-user privacy.</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="media">
-                            <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg" alt="">
-                            <div class="media-body">
-                                <strong>
-                                    V M Samir
-                                    <a href="">
-                                        <img class="d-inline-block"
-                                            src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg" alt="">
-                                    </a>
-                                </strong><br>
-                                CIO at
-                                <a href="#" target="_blank">Rustomjee</a>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container item">
+                        <div class="shadow text">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow">
+                            <div class="card-body">
+                                <p>Given the pandemic, we were looking for contactless options to replace our legacy
+                                    time
+                                    &amp;
+                                    attendance management systems, which required manual input from users. We found
+                                    DeskTime
+                                    to
+                                    be an effective tool that provides undisputable insights to both end-users &amp;
+                                    reporting
+                                    managers, establishes transparency, and does not violate end-user privacy.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                    <img class="lazyload" src="https://desktime.com/assets/img/customers/samir.jpg"
+                                        alt="">
+                                    <div class="media-body">
+                                        <strong>
+                                            V M Samir
+                                            <a href="">
+                                                <img class="d-inline-block"
+                                                    src="https://desktime.com/assets/img/bs4/icons/social/linkedin.svg"
+                                                    alt="">
+                                            </a>
+                                        </strong><br>
+                                        CIO at
+                                        <a href="#" target="_blank">Rustomjee</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
             </div>
-            <button id="left-btn" class="nextprevBtn">
-                < </button>
-                    <button id="right-btn" class="nextprevBtn"> > </button>
+            
+            <!-- <button type="button" onclick="prev()" class="slider-btn" id="pre">Preview</button>
+            <button type="button" onclick="next()" class="slider-btn" id="next">Next</button> -->
         </div>
+        <button id="left-btn" class="nextprevBtn" onclick="prev()" type="button"> < </button>
+        <button id="right-btn" class="nextprevBtn" onclick="next()" type="button"> > </button>
+
     </div>
+
     <div class="nine-div">
         <div class="container text-center wd-70 flex-column">
             <h3 class="font-weight-bold mb-4">Join 400,000+ users already managing their time with the DeskTime app</h3>
@@ -341,4 +1015,15 @@
 <script type="module">
     import footer from '/dizzy-stitch-9009/script/footer.js';
     document.getElementById("footer").innerHTML = footer
+</script>
+
+<script>
+    var sliderMain = document.getElementById('slider-main');
+    var item = sliderMain.getElementsByClassName('item');
+    function next() {
+        sliderMain.append(item[0]);
+    }
+    function prev() {
+        sliderMain.prepend(item[item.length - 1]);
+    }
 </script>
