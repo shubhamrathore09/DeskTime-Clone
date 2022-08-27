@@ -33,3 +33,7 @@ let state=0;
     }
     img.src=arr[state]
   }
+
+  function login(){
+    window.location.href="signup.html"
+  }

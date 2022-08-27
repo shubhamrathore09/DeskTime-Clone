@@ -14,14 +14,14 @@ function navbar() {
     </label>
     <div class="first"> 
         <p>
-        <a href=""><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">
+        <a href="index.html"><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">
         </p>
             <p>Desktime</p></a>
     </div>
     <div class="second"s>
         <ul>
             <li> <a href="./demo.html">Demo</a></li>
-            <li>  <a href="">Feature</a></li>
+            <li>  <a href="fe.html">Feature</a></li>
             <li><a href="">Pricing</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">FAQ</a></li>
