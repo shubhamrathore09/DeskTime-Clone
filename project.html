@@ -9,6 +9,15 @@
     <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/mydesk.css">
     <link rel="stylesheet" href="./style/project.css">
+
+
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="shortcut icon" href="https://desktime.com/favicon/favicon-32x32.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./shikhu_chatbot/chatbot.css">
+    <!-- <link rel="stylesheet" href="./shikhu_chatbot/bot.css"> -->
+
+
     
 </head>
 <body>
@@ -18,6 +27,13 @@
         <script type="module">
             import sidenav from './script/desknav.js'
             document.getElementById("sidenav_nav").innerHTML=sidenav
+            let person_em=JSON.parse(localStorage.getItem("storeDetails"));
+            let nam=person_em[0].name
+            document.getElementById("save_name").innerHTML=null;
+            document.getElementById("save_name").innerHTML=nam;
+            document.getElementById("save_latter").innerHTML=null;
+            document.getElementById("save_latter").innerText=nam[0]
+
         </script>
 
     </div>
@@ -34,7 +50,44 @@
 </div>
 
 
-<div id="project_contain">
+<div id="all_body_project">
+
+    <div class="add_project">
+       <div class="add_pro_details">
+        <div>
+            <p>Create Project</p>
+            <div onclick="cencel_pro()">&times;</div>
+        </div>
+        <div>
+            <label for="" >Project name</label>
+            <input type="text" id="pr_name">
+
+            <label for="" class="add_label">Project hour rate</label> 
+            <div>
+                <p>INR</p>
+                <input type="text" id="pr_hrate">
+            </div>
+
+            <label for="" class="add_label">Estimate cost</label>
+            <div>
+                <p>INR</p>
+                <input type="text" id="pr_cost">
+            </div>
+
+            <label for="" class="add_label">Estimate time</label>
+            <div>
+                <p>INR</p>
+                <input type="text" id="pr_time">
+            </div>
+        </div>
+       </div>
+       <div class="add_pro_cencel_btn">
+        <button onclick="cencel_pro()">Cencel</button>
+        <button onclick="create_pro()">Create</button>
+       </div>
+    </div>
+
+    <div id="project_contain">
 
     <div id="project_detail">
         <div>
@@ -51,16 +104,105 @@
              </ul>
             </div>
             <div>
-                <img src="https://desktime.com/assets/img/bs4/intro/projects.png" alt="">
+                <img src="https://desktime.com/assets/img/bs4/intro/projects.png" alt="" width="100%">
             </div>
+    </div>
+    <button class="project_button" style="background-color: #4EA419;color:#ffffff">Got it</button>
+    <button class="project_button">Read more</button>
+</div>
+
+<div id="add_new_project">
+    <p>Project</p>
+    <div>
+    <button style="background-color:#4EA419;color:#ffffff;border:2.5px solid #4EA419" onclick="new_project()">New Project</button>
+    <button>INTEGRATIONS</button>
+    </div>
+</div>
+
+<div id="display_pro">
+    <div>
+        <p>TOTAL AMOUNT OF PROJECTS</p>
+        <h1 id="total_amount_pro" class="show_pro"></h1>
+    </div>
+    <div>
+        <p>PROJECTS CREATED THIS MONTH</p>
+        <h1 id="total_this_month" class="show_pro"></h1>
+    </div>
+    <div>
+        <p>PROJECTS CREATED THIS WEEK</p>
+        <h1 id="total_this_week" class="show_pro"></h1>
+    </div>
+</div>
+
+<div id="no_project">
+
+    <div class="no_project_add">
+        <img src="https://desktime.com/assets/img/icons/folder.svg" alt="">
+        <p>No projects to show.
+            Create your first project to get overview.</p>
+        <button onclick="new_project()">
+            CREATE NEW PROJECT
+        </button>
+
     </div>
 
 </div>
 
 
+<div id="project_details">
+    <h2>
+        Project details
+    </h2>
+    <div id="project_saved" class="project_cl">
 
+    </div>
+</div>
+
+<div id="alert_save">
+    <div>
+        <p>Project Delete</p>
+    </div>
+    <div>
+        <p>Are you sure you want to delete project?This can not be undo</p>
+    </div>
+    <div>
+    <button onclick="cencel_pro()">Cencel</button>
+    <button onclick="delete_project()">Delete</button>
+    </div>
+</div>
+
+<div id="footer">
+    <script type="module">
+        import footer_desk from './script/mydesk_footer.js';
+        document.getElementById("footer").innerHTML=footer_desk;
+    </script>
+
+</div>
+
+<div id="chat">
+    <script type="module">
+        import chat from './shikhu_chatbot/one.js'
+        document.getElementById("chat").innerHTML=chat;
+    </script>
+</div>
+
+</div>
 </body>
 </html>
+<script>
+   
+// document.getElementById("save_name").innerText=person_email[0].email;
+</script>
+
+<!-- <script src="./shikhu_chatbot/response.js"></script>
+<script src="./shikhu_chatbot/app.js"></script> -->
+<script src="./shikhu_chatbot/chatbot.js"></script>
+<!-- <script src="./shikhu_chatbot/chatbotservice.js"></script> -->
+
+
+<script src="./script/project.js">
+</script>
+
 <script src="./script/mydeskopen.js">
 </script>
 
