@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/777c85ebe0.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bot.css" />
+    <title>chatbot</title>
+  </head>
+
+  <body>
+    <div id="chatbot_div">
+      <button style="font-size: 20px" class="open-chat" onclick="openForm()">
+        <i class="fa-solid fa-comment"></i> chat
+      </button>
+    </div>
+
+    <div class="chat-popup" id="chatForm">
+      <form action="/action_page.php" class="chatform-container">
+        <div id="chat_header">
+          <button type="button" id="chatback" onclick="backForm()">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+          <button type="button" id="chatnext" onclick="nextForm()">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+          <div>
+            <h2 style="color: white">Desktime</h2>
+          </div>
+
+          <button type="button" class="chatclose" onclick="closeForm()">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+
+        <div class="chat-body">
+          <p>
+            We aren't online at the moment. Leave a message and we'll get back
+            to you.
+          </p>
+          <div id="chatbox">
+           
+              <label for="Name">Name</label>
+              <br /><br />
+              <input type="text" id="chatname" />
+              <br /><br />
+              <div id="googlechat">
+                <p>Or social sign in:</p>
+                <a href="https://www.google.com/"
+                  ><button><i class="fa-brands fa-google"></i></button
+                ></a>
+              </div>
+              <br /><br />
+              <label for="Email">Email</label>
+              <br /><br />
+              <input type="email" id="chatemail" />
+              <br /><br />
+              <label for="Message">Message</label>
+              <br /><br />
+              <input type="text" id="chatmsg" />
+             
+    
+          </div>
+        </div>
+
+        <div id="chat_footer">
+          <div id="chatdiv">
+            <a
+              style="text-decoration: none; color: rgb(90, 87, 87)"
+              href="https://www.zendesk.co.uk/embeddables/?utm_source=webwidget&utm_medium=poweredbyzendesk&utm_campaign=image"
+              >zendesk</a
+            >
+            <button type="submit" id="send_msg">Send message</button>
+          </div>
+        </div>
+
+        <div class="send"></div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
+<script>
+  function openForm() {
+    document.getElementById("chatForm").style.display = "block";
+  }
+
+  
+  function closeForm() {
+    document.getElementById("chatForm").style.display = "none";
+  }
+
+
+  document.getElementById("chatback").addEventListener("click", function(){
+    window.location.href="chatbot.html"
+  })
+
+  document.getElementById("chatnext").addEventListener("click", function(){
+    window.location.href="live_chat.html"
+  })
+
+  document.getElementById("send_msg").addEventListener("click", function(){
+    window.location.href="live_chat.html"
+  })
+
+</script>
+
