@@ -107,7 +107,7 @@ p {
 a {
     text-decoration: none;
     /* border: 1px solid red; */
-    padding: 9px 25px;
+    /* padding: 9px 25px; */
     border-radius: 5px;
     background-color: transparent;
 }

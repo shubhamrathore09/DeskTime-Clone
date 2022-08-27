@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | All Categories</title>
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./demo.css">
+</head>
+
+<body>
+    <div class="blog-hero" id="blog-hero">
+
+    </div>
+    <div class="newsletter-subscribe" id="newsletter-subscribe">
+
+    </div>
+    <div class="start-trial alignful" id="start-trial">
+
+    </div>
+    <div class="guest-blogging" id="guest-blogging">
+
+    </div>
+</body>
+
+</html>
+<script type="module">
+    //type = module
+    import blog from "./blog.js";
+    // i need to append now but { what & where }
+    let bloghero = document.getElementById('blog-hero');
+    bloghero.innerHTML = blog();
+
+    import newsletter from "./newsletter.js";
+    let newslettersubscribe = document.getElementById('newsletter-subscribe');
+    newslettersubscribe.innerHTML = newsletter();
+
+    import starttrial from "./starttrial.js";
+    let starttrialdiv = document.getElementById('start-trial');
+    starttrialdiv.innerHTML = starttrial();
+
+    import guest from "./guest.js";
+    let guestblogging = document.getElementById('guest-blogging');
+    guestblogging.innerHTML = guest();
+
+</script>
