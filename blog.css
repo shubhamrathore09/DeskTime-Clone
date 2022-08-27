@@ -98,10 +98,29 @@ header {
     display: flex;
     gap: 20px;
 }
+.newsletter-subscribe{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* display: flex; */
+    /* gap: 20px; */
+}
 
 .blog-landing-posts>div {
     width: 40%;
     height: auto;
     margin: auto;
     /* border: 1px solid blue; */
+}
+
+.start-trail{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    background-color: gainsboro;
+    /* display: flex; */
+    /* gap: 20px; */
+    padding: 3.125rem 3.125rem 1.25rem;
 }
