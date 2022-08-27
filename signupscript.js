@@ -3,7 +3,11 @@ document.querySelector("#signup").addEventListener("submit",createfunc);
     function createfunc(event){
         event.preventDefault();
         obj={
+
+            
+
             name:document.querySelector("#name").value,
+
             email:document.querySelector("#email").value,
             password:document.querySelector("#password").value,
         }

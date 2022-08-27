@@ -9,10 +9,11 @@ font-family: "Lato", sans-serif;
 .sidenav {
 height: 100%;
 width: 0;
-position: fixed;
+/* position: fixed; */
 z-index: 1;
-top: 0;
+position: fixed;
 left: 0;
+
 background-color:#475056;
 overflow-x: hidden;
 transition: 0.5s;
@@ -50,6 +51,12 @@ display: flex;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 align-items: center;
 margin-left: 50px;
+/* width: ; */
+/* position:sticky;
+top: 0; */
+/* left: 0; */
+background-color: #ffffff;
+/* z-index: 1; */
 }
 
 .sidebar_main{
@@ -141,8 +148,8 @@ width: 100%;
     margin: auto;
     margin-right: 20px;
     margin-left: 100px;
-    margin-top: 40px;
     background-color: #2693F8;
+    margin-top: 20px;
 }
 #second_nav button{
     padding: 7px 8px;
@@ -153,6 +160,7 @@ width: 100%;
     cursor: pointer;
     font-size: 14px;
     font-family: sans-serif;
+
 }
 #second_nav button span{
     padding: 3px;
@@ -170,11 +178,10 @@ width: 100%;
 }
 #second_nav>a{
     color: white;
-    /* margin-left: 95%; */
     cursor: pointer;
     font-size: 22px;
     font-weight: bold;
-    position: relative;
-    top: -40px;
-    left: 400px;
+    position: absolute;
+    top: 14%;
+    left: 90%;
 }

@@ -7,16 +7,46 @@
     <script src="https://kit.fontawesome.com/b87712823b.js" crossorigin="anonymous"></script>
     <title>mydesk</title>
     <link rel="stylesheet" href="./style/mydesk.css">
+    <link rel="stylesheet" href="./style/sidenav.css">
+    
+    <link rel="stylesheet" href="./style/footer.css">
+
+
+    
 </head>
 <body>
+
+    <div id="sidenav_nav">
+        <script type="module">
+            import sidenav from './script/desknav.js'
+            document.getElementById("sidenav_nav").innerHTML=sidenav
+        </script>
+    </div>
+
+    <div id="total_div">
+
+            <div id="slide_help">
+
+            <script type="module">
+                import slide from './script/slidingpart.js'
+                document.getElementById("slide_help").innerHTML=slide;
+            </script>
+
+            </div>
+
+
+
+
+
+
     <div id="mydesk_main">
         <h2>My DeskTime</h2>
         <div class="mydesk_right">
             <p id="mydesk_data">25-08-2022</p>
-            <input type="checkbox" id="check">
-            <label for="check">
+            
+           
                 <a href="https://calendly.com/sales-desktime/desktime-demo?month=2022-08"><i class="fa-solid fa-calendar-days"></i></a>
-            </label>
+           
              <div><button><</button>
                 <button>></button></div>
 
@@ -25,53 +55,56 @@
                     <button>Week</button>
                     <button>Month</button>
                 </div>
+                <input type="checkbox" id="check" onclick="check()">
+            <label for="check">
+                <i class="fa-regular fa-circle-question"></i>
+            </label>
         </div>
     </div>
     <div id=mydesk_timing>
         <div>
             <p>ARRIVAL TIME</p>
             <h1 id="mydesk_f">-</h1>
-            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+
         </div>
         <div>
             <p>Left time</p>
             <h1 id="mydesk_s">-</h1>
-            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+
         </div>
 
         <div>
             <p>PRODUCTIVITY TIME</p>
             <h1 id="mydesk_t">0<span>s</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-productive-time.svg" alt="">
+            
         </div>
 
         <div>
             <P>DESKTIME TIME</P>
             <h1 id="mydesk_four">0<span>s</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-desktime-time.svg" alt="">
+           
         </div>
         <div>
             <P>UNPRODUCTIVE TIME</P>
             <h1 id="mydesk_five">0<span>s</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-offline-time.svg" alt="">
+            
         </div>
         <div>
             <P>TIME AT WORK</P>
             <h1 id="mydesk_six">0<span>s</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-productive-time.svg" alt="">
+            
         </div>
         <div>
             <P>EFFECTIVENESS</P>
             <h1 id="mydesk_seven">0<span>%</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+  
         </div>
         <div>
             <P>PRODUCTIVITY</P>
             <h1 id="mydesk_e">0<span>%</span></h1>
-            <img src="https://desktime.com/assets/img/employee-empty-effectiveness.svg" alt="">
+            
         </div>
     </div>
-
 
     <div id="stop">
         <div>
@@ -81,8 +114,120 @@
         </div>
         <div id="display"></div>
     </div>
+    <div id="dele_alert">
+        <p>Are you sure you want to delete</p>
+        <button onclick="Yes()" class="del_yes">Yes</button>
+        <button onclick="No()" class="del_no">No</button>
+    </div>
+
+    <div class="productivity">
+        <p>PRODUCTIVITY BAR</p>
+        <div class="pro_prograss" style="margin-top:160px;">
+
+        </div>
+        <div class="pro_time" >
+            <p>12AM</p>
+            <p>2Am</p>
+            <p>4AM</p>
+            <p>6AM</p>
+            <p>8AM</p>
+            <p>10AM</p>
+            <p>12PM</p>
+            <p>2PM</p>
+            <p>4PM</p>
+            <p>6PM</p>
+        </div>
+    </div>
+
+
+    <div class="productivity" style="height:auto;">
+        <p>Project</p>
+        <div class="pro_prograss" style="margin-top:100px;">
+        </div>
+        <div class="pro_time" >
+            <p>12AM</p>
+            <p>2Am</p>
+            <p>4AM</p>
+            <p>6AM</p>
+            <p>8AM</p>
+            <p>10AM</p>
+            <p>12PM</p>
+            <p>2PM</p>
+            <p>4PM</p>
+            <p>6PM</p>
+        </div>
+    </div>
+
+    <div class="productive_app">
+        <div>
+            PRODUCTIVE APPS
+        </div>
+        <div>
+            <p>
+            No data collected
+            </p>
+        </div>
+    </div>
+
+    <div class="productive_app">
+        <div style="background-color:#FF6600;">
+            UNPRODUCTIVE APPS
+        </div>
+        <div>
+            <p>
+            No data collected
+            </p>
+        </div>
+    </div>
+
+    <div class="productive_app">
+        <div style="background-color:#999DA1;">
+            NEUTRAL APPS <h4 id="work_time"></h4>
+        </div>
+        <div>
+            <p>
+            No data collected
+            </p>
+        </div>
+    </div>
+
+
+
+
+    
+<div id="footer">
+
+</div>
+
+</div>
 </body>
 </html>
 <script src="./script/mydesk.js">
 
+</script>
+
+<script>
+    let co=0;
+    let demo=0;
+function openNav() {
+    if(co==0){
+  document.getElementById("main").style.marginLeft = "300px";
+  document.getElementById("sidebar_only").style.width="280px"
+  document.getElementById("second_nav").style.marginLeft="320px"
+  document.querySelector("#total_div").style.marginLeft="320px"
+  co++;
+    }
+    else{
+        document.getElementById("sidebar_only").style.width = "40px";
+  document.getElementById("main").style.marginLeft = "50px";
+  document.getElementById("second_nav").style.marginLeft="100px"
+  document.querySelector("#total_div").style.marginLeft="100px"
+  co=0;
+    }
+}
+</script>
+
+<script type="module">
+    import mydesk_footer from './script/mydesk_footer.js';
+    document.getElementById("footer").innerHTML=mydesk_footer;
 </script>

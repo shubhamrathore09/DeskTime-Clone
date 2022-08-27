@@ -59,25 +59,10 @@
         import sidenav from './script/desknav.js'
         document.getElementById("sidenav_nav").innerHTML=sidenav;
     </script>
-    <script>
-        let count=0;
-        let demo=0;
-    function openNav() {
-        if(count==0){
-    
-      document.getElementById("main").style.marginLeft = "300px";
-      document.getElementById("sidebar_only").style.width="280px"
-      document.getElementById("second_nav").style.marginLeft="320px"
-      count++;
-        }
-        else{
-            document.getElementById("sidebar_only").style.width = "40px";
-      document.getElementById("main").style.marginLeft = "50px";
-      document.getElementById("second_nav").style.marginLeft="100px"
-      count=0;
-        }
-    }
 
+
+    <script src="./script/mydeskopen.js">
+ 
     </script>
 </body>
 </html>
