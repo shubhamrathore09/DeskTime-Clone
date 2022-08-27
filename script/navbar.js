@@ -20,12 +20,12 @@ function navbar() {
     </div>
     <div class="second"s>
         <ul>
-            <li> <a href="">Demo</a></li>
+            <li> <a href="./demo.html">Demo</a></li>
             <li>  <a href="">Feature</a></li>
             <li><a href="">Pricing</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="./blog.html">Blog</a></li>
             <li class="li_but"><button><a href="">LOGIN</a></button></li>
             <li class="li_but"><button id="navbar_last_but"><a href="">SIGN-UP</a></button></li>
         </ul>  
