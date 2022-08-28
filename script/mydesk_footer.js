@@ -60,7 +60,7 @@ function mydesk_footer(){
 
         <div class="footer_first">
             <img src="https://desktime.com/favicon/favicon-32x32.png" alt="">
-            <a href="">DestTime</a>
+            <a href="index.html">DestTime</a>
         </div>
 
         <div class="footer_second">

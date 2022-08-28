@@ -1,8 +1,12 @@
+
 #home_body{
-    padding-top: 90px;
-    width: 100%;
+    /* padding-top: 90px; */
+    /* width: 100%; */
+    
     margin: auto;
    background-image:url(https://desktime.com/assets/img/intro_background.png);
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 .upper_body{
     width: 80%;
@@ -57,7 +61,7 @@ margin-top: 80px;
 .c2{
     width: 80%;
     margin: auto;
-margin-top: 50px;
+margin-top: 160px;
 display: flex;
 justify-content: space-between;
 gap: 50px;
@@ -66,6 +70,7 @@ gap: 50px;
 display: grid;
 grid-template-columns: repeat(2,1fr);
 gap: 30px;
+width: 80%;
 }
 #c2-flex{
 display: flex;
@@ -366,13 +371,15 @@ background-color: gainsboro;
 
 
 .c2_pop{
-    height: 300px;
+    /* height: 300px; */
     width: 200px;
-    border: 1px solid rebeccapurple;
+    border: 1px solid #1b99f4;
     position: relative;
- right: -900px;
- top: -200px;
- background-color: blueviolet;
+ right: -975px;
+ top: -370px;
+ background-color: #1b99f4;
+ border-radius: 30px;
+ color: white;
 }
 
 .c2_pop_button{
@@ -398,7 +405,7 @@ align-items: center;
 height: 50px;
 
 position: relative;
-left: 70px;
+left: 75px;
 }
 #c2-container{
     width: 100%;

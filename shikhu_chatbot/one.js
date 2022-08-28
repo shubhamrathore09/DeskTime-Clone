@@ -35,11 +35,11 @@ return `
         
         <span id="chatid6"></span>
         <br><br>
-        <a href="shikhu_chatbot/live_chat.html"><span id="chatid7"></span></a>
+        <a href="booklivechat.html" target="Blank"><span id="chatid7"></span></a>
         <br><br>
         <span id="chatid8"></span>
         <br><br>
-        <a href="shikhu_chatbot/live_chat.html"><span id="chatid9"></span></a>
+        <a href="live_chat.html"><span id="chatid9"></span></a>
     </div>
 
     <div id="chat_footer">

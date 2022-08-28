@@ -1,11 +1,11 @@
 function sidenav(){
     return `<div id="sidebar_only">
-    <a href=""><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">DeskTime</a>
+    <a href="mydesfirst.html"><img src="https://desktime.com/favicon/favicon-32x32.png" alt="">DeskTime</a>
 
 
    
-    <a href=""><i class="fa-solid fa-desktop"><p>My DeskTime</p></i></a>
-    <a href=""><i class="fa-solid fa-lock"><p>Project</p></i></a>
+    <a href="mydesfirst.html"><i class="fa-solid fa-desktop"><p>My DeskTime</p></i></a>
+    <a href="project.html"><i class="fa-solid fa-lock"><p>Project</p></i></a>
     <a href=""><i class="fa-solid fa-calendar"><p>Work Schdules</p></i></a>
     <a href=""> <i class="fa-solid fa-calendar-check"><p>Booking</p></i></a>
     <a href=""><i class="fa-solid fa-calendar-days"><p>Absence Calender</p></i></a>

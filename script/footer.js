@@ -22,7 +22,7 @@ function footer(){
 
     <tr>
         <td><a href="">Term</a></td>
-        <td><a href="">Employee monitoring guide</a></td>
+        <td><a href="emplyee.html">Employee monitoring guide</a></td>
         <td><a href="">Trello</a></td>
         <td><a href="">Automatic time</a></td>
         <td><a href="">schedule a call</a></td>

@@ -25,7 +25,7 @@
           alert("Create account")
       } else {
           alert("successfully logged In")
-          window.location.href="Navbar.html"
+          window.location.href="mydesfirst.html"
       }
-      localStorage.setItem("storeDetails",JSON.stringify(Arr2));
+    //   localStorage.setItem("storeDetails",JSON.stringify(Arr2));
   }

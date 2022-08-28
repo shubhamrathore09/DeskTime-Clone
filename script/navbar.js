@@ -25,9 +25,9 @@ function navbar() {
             <li><a href="price.html">Pricing</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li class="li_but"><button><a href="">LOGIN</a></button></li>
-            <li class="li_but"><button id="navbar_last_but"><a href="">SIGN-UP</a></button></li>
+            <li><a href="./blog.html" target="Blank">Blog</a></li>
+            <li class="li_but"><button><a href="login.html">LOGIN</a></button></li>
+            <li class="li_but"><button id="navbar_last_but"><a href="signup.html">SIGN-UP</a></button></li>
         </ul>  
 </div>
 </div>`

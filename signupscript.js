@@ -3,11 +3,7 @@ document.querySelector("#signup").addEventListener("submit",createfunc);
     function createfunc(event){
         event.preventDefault();
         obj={
-
-            
-
             name:document.querySelector("#name").value,
-
             email:document.querySelector("#email").value,
             password:document.querySelector("#password").value,
         }
@@ -15,9 +11,11 @@ document.querySelector("#signup").addEventListener("submit",createfunc);
             alert("Invalid input")
             return;
         } else {
+            Arr.push(obj);
+            localStorage.setItem("storeDetails",JSON.stringify(Arr));
+            
             alert("signed up successfully")
             window.location.href="login.html"
         }
-        Arr.push(obj);
-        localStorage.setItem("storeDetails",JSON.stringify(Arr));
+      
     }

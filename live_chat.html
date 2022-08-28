@@ -8,14 +8,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script  type="module" src="./app.js" defer></script>
-    <script src="response.js" defer></script>
+    <script  type="module" src="./shikhu_chatbot/app.js" defer></script>
+    <script src="./shikhu_chatbot/response.js" defer></script>
 
-    <link rel="stylesheet" href="chatbot.css" />
+    <link rel="stylesheet" href="./shikhu_chatbot/chatbot.css" />
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="shortcut icon" href="https://desktime.com/favicon/favicon-32x32.png" type="image/x-icon">
     <title>livechatbot</title>
   </head>
 
   <body>
+
+    <div id="nav">
+      <script type="module">
+        import navbar from './script/navbar.js'
+        document.getElementById("nav").innerHTML=navbar
+      </script>
+    </div>
+    
+    <div id="main_faq_imp">
+      <script type="module">
+        import faq_exp from './script/sikha_faq_ex.js'
+        document.getElementById("main_faq_imp").innerHTML=faq_exp;
+      </script>
+    </div>
+
+    <div id="footer">
+      <script type="module">
+        import navbar from './script/footer.js'
+        document.getElementById("footer").innerHTML=navbar
+      </script>
+    </div>
+
+
+
     <div id="chatbot_div">
       <button style="font-size: 20px" class="open-chat" onclick="openForm()">
         <i class="fa-solid fa-comment"></i> chat
@@ -83,3 +111,8 @@
     window.location.href="chatbot.html"
   })
 </script>
+
+<script src="">
+
+</script>
+
