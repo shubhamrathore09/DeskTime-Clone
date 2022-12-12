@@ -1,10 +1,10 @@
 # DeskTime-Clone
-DeskTime allows teams, managers, and freelancers to measure DeskTime DeskTime time spent on tasks and projects. It is used in many industries for settling up with hourly workers and billing clients for work.
+DeskTime allows teams, managers, and freelancers to measure DeskTime time spent on tasks and projects. It is used in many industries for settling up with hourly workers and billing clients for work.
 
 
 TECH STACK : HTML(73.3),CSS(14.3),JavaScript(12.4%).
 
-FUNCTIONALITIES: log in, project-tracker, calories-tracker, time-tracker, using routes for every pages,
+FUNCTIONALITIES: log in, project-tracker, time-tracker.
 
 
 
